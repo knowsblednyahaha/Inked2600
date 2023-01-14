@@ -1,0 +1,54 @@
+.contact-hero-container{
+    padding: 10% 5%;
+}
+.big-text-container {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 5%;
+}
+.big-text-container a{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+.big-text-container a {
+    display: inline-block;
+    position: relative;
+    color: #5C5C5C;
+  }
+  
+  .big-text-container a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .big-text-container a:hover{
+    color: #FFF;
+  }
+  .big-text-container a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .text-description{
+    padding: 1rem 0;
+  }
+  .social-media-container {
+    margin: 5% 0;
+    font-size: 1.25rem;
+  }
+  .social-media-item{
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    width: 100%;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  

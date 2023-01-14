@@ -1,0 +1,19 @@
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 5%;
+    width: 100%;
+}
+.about-text{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.about-text a{
+    color: #5C5C5C;
+    border-bottom: 1px solid #5C5C5C;
+}
+.about-text a:hover{
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+}
