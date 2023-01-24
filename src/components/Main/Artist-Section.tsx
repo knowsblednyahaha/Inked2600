@@ -6,13 +6,13 @@ function ArtistSection() {
     return(
         <section className='artist-container'>
             <div className='artist-title'>
-                Meet the <span>Artists</span>
+                <h3>Meet the <span>Artists</span></h3>
             </div>
             <div className='swiper-container'>
                 <Swiper
                     navigation={true}
                     autoHeight={true}
-                    spaceBetween={50}
+                    spaceBetween={10}
                     slidesPerView={1}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
@@ -24,7 +24,10 @@ function ArtistSection() {
                             <img src="/img/1.jpg" alt="" />
                         </div>
                         <div className='text-container'>
-                            <span>Roniel</span> Malupet
+                            <div className='artist-name'>
+                                <h4><span>Roniel</span> Malupet</h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore ab assumenda consectetur et eveniet, ipsum praesentium rerum totam corrupti ducimus. Delectus nobis optio cum dignissimos voluptatibus. Cum, incidunt quas!</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide
@@ -34,7 +37,10 @@ function ArtistSection() {
                             <img src="/img/2.jpg" alt="" />
                         </div>
                         <div className='text-container'>
-                            <span>Garret</span> Malupet
+                            <div className='artist-name'>
+                                <h4><span>Garret</span> Malupet</h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore ab assumenda consectetur et eveniet, ipsum praesentium rerum totam corrupti ducimus. Delectus nobis optio cum dignissimos voluptatibus. Cum, incidunt quas!</p>
                         </div>
                     </SwiperSlide>
                 </Swiper>

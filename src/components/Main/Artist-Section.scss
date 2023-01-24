@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     height: auto;
+    position: relative;
 }
 .artist-title {
     font-size: 3.25rem;
@@ -24,7 +25,7 @@
     height: 80vh;
     object-fit: cover;
 }
-.text-container {
+.text-container p{
     margin-top: -15%;
     font-size: 4rem;
     font-weight: 700;
@@ -39,11 +40,112 @@
     -webkit-text-stroke: 2px #000000;
 }
 
-@media only screen and (min-width: 992px){
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
     .artist-title {
+        width: 20vw;
+        text-align: left;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .artist-title h3{
+        font-size: 3.75vw;
+        font-weight: 500;
+    }
+    .artist-title span{
+        width: 40vw;
+        font-size: 5vw;
+        font-weight: 700;
+        text-align: left;
+    }
+    .image-container img {
+        width: 50%;
+        height: 80vh;
+    }
+    .artist-name h4{
+        width: 50%;
         font-size: 5rem;
         font-weight: 700;
-        padding: 0 10% 10%;
-        text-align: center;
+        line-height: 100%; 
+        padding: 0;
+        text-align: left;
+        overflow: visible;
+        z-index: 10;
+        position: absolute;
+        top: 30%;
+        color: rgb(19, 19, 19);
+        -webkit-text-stroke: .25px white;
+    }
+    .text-container p{
+        width: 22%;
+        font-size: .75rem;
+        font-weight: 300;
+        line-height: 100%; 
+        padding: 0;
+        text-align: left;
+        overflow: visible;
+        z-index: 10;
+        top: 80%;
+        position: absolute;
+        
+    }
+}
+@media screen and (min-device-width: 1025px){
+    .artist-title {
+        width: 20vw;
+        text-align: left;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .artist-title h3{
+        font-size: 2.75vw;
+        font-weight: 500;
+        line-height: 7vh;
+    }
+    .artist-title span{
+        width: 40vw;
+        font-size: 3.75vw;
+        font-weight: 700;
+        text-align: left;
+    }
+    .image-container img {
+        width: 45%;
+        height: 95vh;
+    }
+    .artist-name h4{
+        width: 50%;
+        font-size: 9rem;
+        font-weight: 700;
+        line-height: 100%; 
+        padding: 0;
+        text-align: left;
+        overflow: visible;
+        z-index: 10;
+        position: absolute;
+        top: 30%;
+        color: rgb(19, 19, 19);
+        -webkit-text-stroke: .25px white;
+    }
+    .text-container p{
+        width: 25%;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 100%; 
+        padding: 0;
+        text-align: left;
+        overflow: visible;
+        z-index: 10;
+        top: 95%;
+        position: absolute;
+        
     }
 }
