@@ -1,11 +1,4 @@
-.artist-info-container{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
 .artist-container {
-    padding: 5% 5%;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13,56 +6,68 @@
     align-items: center;
     height: auto;
     position: relative;
-}
-.artist-title {
-    font-size: 3.25rem;
-    font-weight: 700;
-    padding: 0 10% 10%;
-    text-align: center;
+    padding: 0 5%;
 }
 .swiper-container {
     max-width: 100%;
     height: auto;
 }
-.image-container{
-    text-align: center;
+.artist-info-container{
+    height: 85vh;
+    width: 100%;
+    position: relative;
 }
 .image-container img{
-    width: 90%;
-    height: 80vh;
     object-fit: cover;
 }
-.text-container {
-    .artist-name h4{
-        width: 100%;
-        font-size: 5rem;
-        font-weight: 700;
-        line-height: 100%; 
-        padding: 0;
-        text-align: center;
-        overflow: visible;
-        z-index: 20;
-        position: absolute;
-        bottom: -10%;
-        color: rgb(19, 19, 19);
-        -webkit-text-stroke: .25px white; 
-    }     
-}
-.text-container p{
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 100%; 
-    padding: 0 10%;
-    text-align: center;
-    overflow: visible;
-    z-index: 10;
-}
-
 .text-container span {
     -webkit-text-stroke: 2px #000000;
 }
 
-@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+// for mobile device
+@media screen and (max-device-width: 479px){
+    .text-container {
+        h4{
+            font-size: 3.75rem !important;
+            bottom: 10% !important;
+        }
+    }
+}
+@media screen and (max-device-width: 767px){
+    .artist-title {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0 0 5% 0 ;
+        text-align: center;
+    }
+    .image-container{
+        text-align: center;
+    }
+    .image-container img{
+        width: 90%;
+        height: 70vh;
+    }
+    .text-container {
+        h4{
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            font-size: 4.75rem;
+            font-weight: 700;
+            line-height: 90%; 
+            z-index: 20;
+            color: rgb(19, 19, 19);
+            -webkit-text-stroke: .25px white; 
+        }
+        p{
+            display: none;
+        }     
+    }
+}
+// fortablets and small laptop screens
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px){
     .artist-title {
         width: 20vw;
         text-align: left;
@@ -72,15 +77,14 @@
         left: 0;
         padding: 0;
         margin-left: 5%;
-        margin-top: 5%;
     }
     .artist-title h3{
-        font-size: 3.75vw;
+        font-size: 3vw;
         font-weight: 500;
     }
     .artist-title span{
         width: 40vw;
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: 700;
         text-align: left;
     }
@@ -88,36 +92,46 @@
         width: 50%;
         height: 80vh;
     }
-    .artist-name h4{
+    .text-container{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .text-container h4{
         width: 50% !important;
-        font-size: 5rem;
+        font-size: 10vh !important;
         font-weight: 700;
         line-height: 100%; 
         padding: 0;
-        text-align: left;
+        text-align: left !important;
         overflow: visible;
         z-index: 10;
-        position: absolute;
-        top: 50%;
-        bottom: 0;
         color: rgb(19, 19, 19);
         -webkit-text-stroke: .25px white;
     }
     .text-container p{
-        width: 22%;
-        font-size: 4rem;
-        font-weight: 300;
-        line-height: 100%; 
-        padding: 0;
-        text-align: left;
-        overflow: visible;
+        display: none;
+    }
+    .swiper-slide-next {
         z-index: 10;
-        top: 80%;
-        position: absolute;
-        
+        transform: translateX(-70%) !important;
+        .image-container img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25%;
+            height: 60vh;
+        }
+        .text-container{
+            display: none;
+        }
     }
 }
-@media screen and (min-device-width: 1025px){
+// for large laptop screens and small desktop screens
+@media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
+    .artist-container {
+        padding: 0 0 5% 0;
+    }
     .artist-title {
         width: 20vw;
         text-align: left;
@@ -127,7 +141,6 @@
         left: 0;
         padding: 0;
         margin-left: 5%;
-        margin-top: 5%;
     }
     .artist-title h3{
         font-size: 2.75vw;
@@ -169,12 +182,110 @@
     }
     .text-container p{
         width: 25%;
-        font-size: 2.75vh;
+        font-size: 2vh;
         font-weight: 300;
         line-height: 100%; 
         padding: 2% 0;
         text-align: left;
         overflow: visible;
         z-index: 10;
+    }
+    .artist-container {
+        padding: 0 0 0 5%;
+    }
+    .artist-container {
+        padding: 0 0 0 5%;
+    }
+    .swiper-slide-next {
+        z-index: 10;
+        transform: translateX(-57%) !important;
+        .image-container img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25%;
+            height: 60vh;
+        }
+        .text-container{
+            display: none;
+        }
+    }
+}
+// for large desktop screens
+@media screen and (min-device-width: 1920px){
+    .artist-container {
+        padding: 0 0 5% 0;
+    }
+    .artist-title {
+        width: 20vw;
+        text-align: left;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin-left: 5%;
+    }
+    .artist-title h3{
+        font-size: 2.75vw;
+        font-weight: 500;
+        line-height: 7vh;
+    }
+    .artist-title span{
+        width: 40vw;
+        font-size: 3.75vw;
+        font-weight: 700;
+        text-align: left;
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container img {
+        width: 40%;
+        height: 90vh;
+    }
+    .text-container{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5%;
+    }
+    .text-container h4{
+        width: 50% !important;
+        font-size: 13vh !important;
+        font-weight: 700;
+        line-height: 100%; 
+        padding: 0;
+        text-align: left !important;
+        overflow: visible;
+        z-index: 10;
+        color: rgb(19, 19, 19);
+        -webkit-text-stroke: .25px white;
+    }
+    .text-container p{
+        width: 25%;
+        font-size: 2vh;
+        font-weight: 300;
+        line-height: 100%; 
+        padding: 2% 0;
+        text-align: left;
+        overflow: visible;
+        z-index: 10;
+    }
+    .swiper-slide-next {
+        z-index: 10;
+        transform: translateX(-60%) !important;
+        .image-container img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25%;
+            height: 60vh;
+        }
+        .text-container{
+            display: none;
+        }
     }
 }

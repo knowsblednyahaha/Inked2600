@@ -6,11 +6,8 @@
 }
 .marquee {
   width: 100%;
-  margin-bottom: 5%;
   white-space: nowrap;
-  line-height: 8em;
   position: relative;
-  height: 40vh;
   h5 {
     font-size: 10vh;
     font-weight: 700;
@@ -20,7 +17,6 @@
   h5:nth-child(1){
     text-transform: uppercase;
     display: inline-block;
-    padding-left: -10%;
     animation: marquee-animation 80s linear infinite;
   }
   h5:last-child{
@@ -50,79 +46,139 @@
   }
 }
 .big-text-container {
-    width: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  h5{
+    font-size: 10vh;
+    font-weight: 600;
+  }
+  a{
+    font-size: 10vh;
+    font-weight: 600;
     text-align: center;
-    padding: 20px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    h5{
-      font-size: 10vh;
-      font-weight: 600;
-    }
-    a{
-      font-size: 10vh;
-      font-weight: 600;
-      text-align: center;
-      display: inline-block;
-      position: relative;
-      color: #5C5C5C;
-    }
+    display: inline-block;
+    position: relative;
+    color: #5C5C5C;
+  }
 }
-  .big-text-container a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 5px;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+.big-text-container a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.big-text-container a:hover{
+  color: #FFF;
+}
+.big-text-container a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.social-media-container {
+  margin: 5% 0;
+  font-size: 1.25rem;
+}
+.social-media-item{
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+// for mobile device
+@media screen and (max-device-width: 767px){
+  .marquee {
+    line-height: 4em;
+    height: 20vh;
   }
-  .big-text-container a:hover{
-    color: #FFF;
-  }
-  .big-text-container a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  .social-media-item{
+    text-align: center
   }
   .text-description{
     padding: 1rem 0;
   }
-  .social-media-container {
-    margin: 5% 0;
-    font-size: 1.25rem;
+}
+// fortablets and small laptop screens
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px){
+  .marquee {
+    line-height: 6em;
+    height: 40vh;
   }
   .social-media-item{
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    width: 100%;
-    padding: 1rem 0;
-    cursor: pointer;
-  }
-
-@media only screen and (min-width: 992px){
-  .contact-hero-container{
-    padding: 10% 0%;
-    overflow: hidden;
+    text-align: center
   }
   .marquee h5 {
     font-size: 18vh;
     font-weight: 700;
   }
   .contact-text-container{
-    padding: 0 5%;
+    display: flex;
+  }
+  .big-text-container {
+    width: 50%;
+    line-height: 6.25em;
+  }
+  .big-text-container h5
+  .big-text-container a{
+    font-size: 8vh;
+  }
+  .description-container {
+    width: 50%;
+  }
+}
+// for large laptop screens and small desktop screens
+@media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
+  .marquee {
+    line-height: 7em;
+    height: 40vh;
+  }
+  .marquee h5 {
+    font-size: 18vh;
+    font-weight: 700;
+  }
+  .contact-text-container{
     display: flex;
   }
   .big-text-container {
     width: 50%;
   }
-  .big-text-container h5{
-    font-size: 15vh;
+  .big-text-container h5
+  .big-text-container a{
+    font-size: 13vh;
   }
+  .description-container {
+    width: 50%;
+  }
+}
+// for large desktop screens
+@media screen and (min-device-width: 1920px){
+  .marquee {
+    line-height: 7em;
+    height: 40vh;
+  }
+  .marquee h5 {
+    font-size: 18vh;
+    font-weight: 700;
+  }
+  .contact-text-container{
+    display: flex;
+  }
+  .big-text-container {
+    width: 50%;
+  }
+  .big-text-container h5
   .big-text-container a{
     font-size: 15vh;
   }
