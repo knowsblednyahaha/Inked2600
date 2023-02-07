@@ -103,11 +103,11 @@
     line-height: 4em;
     height: 20vh;
   }
-  .social-media-item{
-    text-align: center
-  }
   .text-description{
     padding: 1rem 0;
+  }
+  .social-media-item{
+    text-align: center
   }
 }
 // fortablets and small laptop screens
@@ -115,9 +115,6 @@
   .marquee {
     line-height: 6em;
     height: 40vh;
-  }
-  .social-media-item{
-    text-align: center
   }
   .marquee h5 {
     font-size: 18vh;
@@ -132,10 +129,13 @@
   }
   .big-text-container h5,
   .big-text-container a{
-    font-size: 8vh;
+    font-size: 10vw;
   }
   .description-container {
     width: 50%;
+  }
+  .social-media-item{
+    text-align: center
   }
 }
 // for large laptop screens and small desktop screens
@@ -161,6 +161,9 @@
   .description-container {
     width: 50%;
   }
+  .social-media-item a{
+    padding-left: 1em;
+  }
 }
 // for large desktop screens
 @media screen and (min-device-width: 1920px){
@@ -184,6 +187,9 @@
   }
   .description-container {
     width: 50%;
+  }
+  .social-media-item a{
+    padding-left: 1em;
   }
 }
   
