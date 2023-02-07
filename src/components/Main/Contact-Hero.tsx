@@ -28,7 +28,7 @@ function ContactHero() {
             </div>
             <div className='contact-text-container'>
                 <div className='big-text-container'>
-                    Say <a href='#'>Hi!</a>
+                    <h5> Say <a href='#'> Hi!</a></h5>
                 </div>
                 <div className='description-container'>
                     <div className='text-description'>is simply dummy text of the printing and

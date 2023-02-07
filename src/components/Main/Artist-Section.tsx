@@ -20,27 +20,27 @@ function ArtistSection() {
                     <SwiperSlide
                         style={{textAlign: "center"}}
                     >
-                        <div className='image-container'>
-                            <img src="/img/1.jpg" alt="" />
-                        </div>
-                        <div className='text-container'>
-                            <div className='artist-name'>
-                                <h4><span>Roniel</span> Malupet</h4>
+                        <div className='artist-info-container'>
+                            <div className='image-container'>
+                                <img src="/img/1.jpg" alt="" />
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore ab assumenda consectetur et eveniet, ipsum praesentium rerum totam corrupti ducimus. Delectus nobis optio cum dignissimos voluptatibus. Cum, incidunt quas!</p>
+                            <div className='text-container'>
+                                <h4><span>Roniel</span> Malupet</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore ab assumenda consectetur et eveniet, ipsum praesentium rerum totam corrupti ducimus. Delectus nobis optio cum dignissimos voluptatibus. Cum, incidunt quas!</p>
+                            </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide
                         style={{textAlign: "center"}}
                     >
-                        <div className='image-container'>
-                            <img src="/img/2.jpg" alt="" />
-                        </div>
-                        <div className='text-container'>
-                            <div className='artist-name'>
-                                <h4><span>Garret</span> Malupet</h4>
+                        <div className='artist-info-container'>
+                            <div className='image-container'>
+                                <img src="/img/2.jpg" alt="" />
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore ab assumenda consectetur et eveniet, ipsum praesentium rerum totam corrupti ducimus. Delectus nobis optio cum dignissimos voluptatibus. Cum, incidunt quas!</p>
+                            <div className='text-container'>
+                                <h4><span>Garret</span> Malupet</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore ab assumenda consectetur et eveniet, ipsum praesentium rerum totam corrupti ducimus. Delectus nobis optio cum dignissimos voluptatibus. Cum, incidunt quas!</p>
+                            </div>
                         </div>
                     </SwiperSlide>
                 </Swiper>

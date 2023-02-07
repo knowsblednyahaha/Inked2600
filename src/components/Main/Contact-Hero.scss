@@ -1,39 +1,38 @@
 .contact-hero-container{
     padding: 10% 5%;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .marquee {
   width: 100%;
-  margin: 0 auto;
+  margin-bottom: 5%;
   white-space: nowrap;
-  // overflow-x: hidden;
   line-height: 8em;
   position: relative;
   height: 40vh;
+  h5 {
+    font-size: 10vh;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+  h5:nth-child(1){
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: -10%;
+    animation: marquee-animation 80s linear infinite;
+  }
+  h5:last-child{
+    padding-bottom: 8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    animation: marquee-animation-reverse 80s linear infinite;
+  }
 }
-.marquee h5 {
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-}
-.marquee h5:nth-child(1){
-  font-size: 10em;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: inline-block;
-  padding-left: -10%;
-  animation: marquee-animation 80s linear infinite;
-}
-.marquee h5:last-child{
-  padding-bottom: 8rem;
-  font-size: 10em;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: inline-block;
-  padding-left: -10%;
-  position: absolute;
-  left: 0;
-  animation: marquee-animation-reverse 80s linear infinite;
-}
+
 @keyframes marquee-animation {
   0%{
     transform: translateX(0);
@@ -52,22 +51,25 @@
 }
 .big-text-container {
     width: 100%;
-    font-size: 4rem;
-    font-weight: 600;
     text-align: center;
     padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h5{
+      font-size: 10vh;
+      font-weight: 600;
+    }
+    a{
+      font-size: 10vh;
+      font-weight: 600;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      color: #5C5C5C;
+    }
 }
-.big-text-container a{
-    font-size: 4rem;
-    font-weight: 600;
-    text-align: center;
-}
-.big-text-container a {
-    display: inline-block;
-    position: relative;
-    color: #5C5C5C;
-  }
-  
   .big-text-container a:after {
     content: '';
     position: absolute;
@@ -107,16 +109,22 @@
     padding: 10% 0%;
     overflow: hidden;
   }
+  .marquee h5 {
+    font-size: 18vh;
+    font-weight: 700;
+  }
   .contact-text-container{
     padding: 0 5%;
     display: flex;
   }
   .big-text-container {
     width: 50%;
-    font-size: 10rem;
+  }
+  .big-text-container h5{
+    font-size: 15vh;
   }
   .big-text-container a{
-    font-size: 10rem;
+    font-size: 15vh;
   }
   .description-container {
     width: 50%;

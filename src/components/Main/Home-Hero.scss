@@ -7,101 +7,96 @@
     position: relative;
 }
 .text-header-container {
-    padding: 0 5%;
+    padding: 0 10%;
     z-index: 2;
 }
 .text-header{
-    font-size: 3em;
     font-weight: 600;
-    text-align: center;
+    line-height: 100%;
 }
-.home-image-container{
-    margin: 0;
+.text-header:nth-child(1){
+    text-align: left;
 }
-.home-image {
-    display: none;
+.text-header:nth-child(2){
+    text-align: center !important;
 }
-// $screen-resolutions
+.text-header:nth-child(3){
+    text-align: end;
+}
+.home-image:nth-child(1) img{
+    height: 50vh !important;
+    position: absolute;
+    top: 5%;
+    right: 12%;
+    width: auto;
+    height: 35%;
+    object-fit: cover;
+    left: auto;
+}
+.home-image:nth-child(2) img{
+    height: 30vh;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+.home-image:nth-child(3) img{
+    display: inline;
+    height: 40vh;
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+}
 
-@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+
+//mobile devices
+@media screen and (max-device-width: 767px){
     .text-header-container {
-        padding: 0 10%;
+        padding: 0 5%;
+        z-index: 2;
     }
     .text-header{
-        font-size: 5em;
-        font-weight: 600;
-        text-align: left;
-        line-height: 100%;
+        font-size: 3em;
+        text-align: center;
     }
-    .text-header:nth-child(1){
-        margin-left: 4%;
-    }
-    .text-header:nth-child(2){
-        text-align: center !important;
-    }
-    .text-header:nth-child(3){
-        margin-left: 25%;
-    }
-    .home-image {
-        display: inline;
+    .home-image-container{
+        margin: 0;
     }
     .home-image:nth-child(1) img{
-        height: 50vh !important;
+        width: 50%;
+        height: 35% !important;
+        object-fit: cover;
         position: absolute;
-        top: 5%;
-        right: 12%;
+        top: 6% !important;
+        left: 5% !important;
+        
     }
     .home-image:nth-child(2) img{
         height: 30vh !important;
         position: absolute;
-        top: 5%;
-        left: 8%;
+        bottom: 10% !important;
+        right: 5% !important;
+        top: auto;
+        left: auto;
     }
     .home-image:nth-child(3) img{
-        height: 40vh !important;
-        position: absolute;
-        bottom: 8%;
-        left: 10%;
+        display: none !important;
     }
 }
-@media screen and (min-device-width: 1025px){
-    .text-header-container {
-        padding: 0 10%;
-    }
+// fortablets and small laptop screens
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px){
     .text-header{
-        font-size: 10em;
-        font-weight: 600;
-        text-align: left;
-        line-height: 100%;
+        font-size: 9.5vh;
     }
-    .text-header:nth-child(1){
-        margin-left: 4%;
+}
+// for large laptop screens and small desktop screens
+@media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
+    .text-header{
+        font-size: 15.45vh;
     }
-    .text-header:nth-child(2){
-        text-align: center !important;
-    }
-    .text-header:nth-child(3){
-        margin-left: 25%;
-    }
-    .home-image {
-        display: inline;
-    }
-    .home-image:nth-child(1) img{
-        height: 50vh !important;
-        position: absolute;
-        top: 5%;
-        right: 12%;
-    }
-    .home-image:nth-child(2) img{
-        height: 30vh !important;
-        position: absolute;
-        top: 5%;
-        left: 8%;
-    }
-    .home-image:nth-child(3) img{
-        height: 40vh !important;
-        position: absolute;
-        bottom: 8%;
-        left: 10%;
+}
+// for large desktop screens
+@media screen and (min-device-width: 1920px){
+    .text-header{
+        font-size: 18vh;
     }
 }
