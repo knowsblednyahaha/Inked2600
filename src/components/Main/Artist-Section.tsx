@@ -52,10 +52,10 @@ function ArtistSection() {
                     >
                         <div className='artist-info-container'>
                             <div className='image-container'>
-                                <img src="/img/2.jpg" alt="" />
+                                <img src="/img/3.jpg" alt="" />
                             </div>
                             <div className='text-container'>
-                                <h4><span>Jester</span>&nbsp; Malupet</h4>
+                                <h4><span>Daniel</span>&nbsp; Malupet</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore ab assumenda consectetur et eveniet, ipsum praesentium rerum totam corrupti ducimus. Delectus nobis optio cum dignissimos voluptatibus. Cum, incidunt quas!</p>
                             </div>
                         </div>
