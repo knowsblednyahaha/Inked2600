@@ -6,7 +6,7 @@
     align-items: center;
     height: auto;
     position: relative;
-    padding: 0 5%;
+    padding: 10% 5%;
 }
 .swiper-container {
     max-width: 100%;
@@ -37,7 +37,7 @@
     .artist-title {
         font-size: 2rem;
         font-weight: 700;
-        padding: 0 0 5% 0 ;
+        padding: 0 5% 5% 5% ;
         text-align: center;
     }
     .image-container{
@@ -77,6 +77,7 @@
         left: 0;
         padding: 0;
         margin-left: 5%;
+        margin-top: 10%;
     }
     .artist-title h3{
         font-size: 3vw;
@@ -130,7 +131,7 @@
 // for large laptop screens and small desktop screens
 @media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
     .artist-container {
-        padding: 0 0 5% 0;
+        padding: 5%;
     }
     .artist-title {
         width: 20vw;
@@ -141,6 +142,7 @@
         left: 0;
         padding: 0;
         margin-left: 5%;
+        margin-top: 5%;
     }
     .artist-title h3{
         font-size: 2.75vw;
@@ -190,12 +192,6 @@
         overflow: visible;
         z-index: 10;
     }
-    .artist-container {
-        padding: 0 0 0 5%;
-    }
-    .artist-container {
-        padding: 0 0 0 5%;
-    }
     .swiper-slide-next {
         z-index: 10;
         transform: translateX(-57%) !important;
@@ -214,7 +210,7 @@
 // for large desktop screens
 @media screen and (min-device-width: 1920px){
     .artist-container {
-        padding: 0 0 5% 0;
+        padding: 5%;
     }
     .artist-title {
         width: 20vw;
@@ -225,6 +221,7 @@
         left: 0;
         padding: 0;
         margin-left: 5%;
+        margin-top: 5%;
     }
     .artist-title h3{
         font-size: 2.75vw;
