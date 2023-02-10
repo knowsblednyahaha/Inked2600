@@ -11,7 +11,7 @@ function Navbar() {
                     <h3>Menu</h3>
                 </div>
             </nav>
-            <div className='menu'>
+            {/* <div className='menu'>
                 <div className='exit'>
                     <img src="./img/x-svgrepo-com.svg" alt="" />
                 </div>
@@ -28,7 +28,7 @@ function Navbar() {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> */}
         </header>
     )
 }
