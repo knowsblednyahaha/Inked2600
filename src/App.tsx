@@ -10,7 +10,7 @@ import Cursor from "./js/cursor";
 function App() {
 
   useEffect( () => {
-      const cursor = new Cursor(document.querySelector(".cursor"));
+      new Cursor(document.querySelector(".cursor"));
   });
 
   return (
