@@ -5,16 +5,34 @@
     z-index: 20;
     contain: layout style size;
     pointer-events: none;
+    &.media-blend {
+        z-index: 100;
+        mix-blend-mode: difference;
+        .cursor-big-circle{
+            mix-blend-mode: difference;
+        }
+    }
     &:before{
         content: "";
         position: absolute;
         top: -24px;
         left: -24px;
         display: block;
-        width: 48px;
-        height: 48px;
+        width: 60px;
+        height: 60px;
         transform: scale(0.2);
         background: white;
         border-radius: 50%;
+    }
+    .cursor-big-circle{
+        display: block;
+        height: 350px;
+        width: 350px;
+        background: white;
+        overflow: hidden;
+        border-radius: 100%;
+        transform: scale(0);
+        margin: -175px 0 0 -175px;
+        position: relative;
     }
 }

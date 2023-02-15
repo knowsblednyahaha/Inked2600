@@ -19,7 +19,9 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/artist' element={<Artistpage />} />
       </Routes>
-      <div className="cursor"></div>
+      <div className="cursor">
+        <div className="cursor-big-circle"></div>
+      </div>
     </>
   )
 }

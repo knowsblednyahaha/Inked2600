@@ -9,8 +9,8 @@ export default class Cursor {
       // Varibles
         this.Cursor = el;
         this.Cursor.style.opacity = 0;
-        this.Item = document.querySelectorAll(".hero-inner-link-item");
-        this.Hero = document.querySelector(".hero-inner");
+        this.Item = document.querySelectorAll(".text-header");
+        this.Img = document.querySelector(".home-image");
         this.bounds = this.Cursor.getBoundingClientRect();
         this.cursorConfigs = {
             x: { previous: 0, current: 0, amt: 0.2 },
@@ -27,6 +27,9 @@ export default class Cursor {
             opacity: 1,
             });
 
+            //Execute Scale
+            this.onScaleMouse();
+
             // The window.requestAnimationFrame() method tells the browser
             // that you wish to perform an animation and requests that the browser
             // calls a specified function to update an animation before the next repaint.
@@ -38,6 +41,30 @@ export default class Cursor {
         // Scale cursor animation
         window.addEventListener("mousemove", this.onMouseMoveEv);
     }
+
+    onScaleMouse() {
+        this.Item.forEach((link) => {
+            if (link.matches(":hover")) {
+                this.ScaleCursor(this.Cursor.children[0], 0.8);
+            }
+            link.addEventListener("mouseenter", () => {
+                this.Cursor.classList.add("media-blend");
+                this.ScaleCursor(this.Cursor.children[0], 0.8);
+            });
+            link.addEventListener("mouseleave", () => {
+                this.Cursor.classList.remove("media-blend");
+                this.ScaleCursor(this.Cursor.children[0], 0);
+            });
+        });
+    }
+    ScaleCursor(el, amount) {
+        gsap.to(el, {
+        duration: 0.6,
+        scale: amount,
+        ease: "Power3.easeOut",
+        });
+    }
+
     render() {
         this.cursorConfigs.x.current = mouse.x;
         this.cursorConfigs.y.current = mouse.y;
