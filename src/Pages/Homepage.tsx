@@ -7,14 +7,15 @@ import ContactHero from '../Components/Contact-Hero';
 import Footer from '../Components/Footer';
 
 export const Homepage = () => {
+  
   return (
-    <main>
+    <div>
       <Navbar/>
       <HomeHero/>
       <AboutSection/>
       <ArtistSection/>
       <ContactHero/>
       <Footer/>
-    </main>
+    </div>
   )
 }

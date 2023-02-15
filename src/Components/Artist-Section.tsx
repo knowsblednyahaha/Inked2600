@@ -19,21 +19,21 @@ function ArtistSection() {
                     slidesPerView={1}
                     autoplay = {true}
                     pagination={{ clickable: true }}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                     modules={[Autoplay, Pagination, Navigation]}
                 >
                     {
                         Data.artist.map( data => {
                             return(
-                                <SwiperSlide style={{textAlign: "center"}}>
+                                <SwiperSlide style={{textAlign: "center"}} key={data.id}>
                                     <div className='artist-info-container'>
                                     <div className='image-container'>
-                                        <img src={data.dp} alt="" />
+                                        <img key={data.dp} src={data.dp} alt="" />
                                     </div>
                                     <div className='text-container'>
-                                        <h4><span>{data.firstname}</span>&nbsp; {data.lastname}</h4>
-                                        <p>{data.artistdesc}</p>
+                                        <h4 key={data.lastname}><span key={data.firstname}>{data.firstname}</span>&nbsp; {data.lastname}</h4>
+                                        <p key={data.artistdesc}>{data.artistdesc}</p>
                                     </div>
                                 </div>
                                 </SwiperSlide>
