@@ -214,6 +214,18 @@
             display: none;
         }
     }
+    .swiper-button-prev{
+        position: absolute !important;
+        top: 5%;
+        right: 20% !important;
+        left: auto;
+    }
+    .swiper-button-next{
+        position: absolute !important;
+        top: 5% !important;
+        right: 10% !important;
+        left: auto;
+    }
 }
 // for large desktop screens
 @media screen and (min-device-width: 1920px){
@@ -294,5 +306,18 @@
         .text-container{
             display: none;
         }
+    }
+    .swiper-button-prev{
+        position: absolute !important;
+        top: 5% !important;
+        right: 20% !important;
+        left: auto !important;
+        color: #FFF !important;
+    }
+    .swiper-button-next{
+        position: absolute !important;
+        top: 5% !important;
+        right: 10% !important;
+        color: #FFF !important;
     }
 }

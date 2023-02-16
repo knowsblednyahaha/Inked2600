@@ -18,7 +18,7 @@ function ArtistSection() {
                     autoHeight={true}
                     spaceBetween={10}
                     slidesPerView={1}
-                    autoplay = {{delay: 1500}}
+                    autoplay = {{delay: 2000,disableOnInteraction: false,}}
                     pagination={{ clickable: true }}
                     // onSlideChange={() => console.log('slide change')}
                     // onSwiper={(swiper) => console.log(swiper)}
