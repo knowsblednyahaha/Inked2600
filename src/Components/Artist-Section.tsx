@@ -1,23 +1,24 @@
 import './Artist-Section.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
+import 'swiper/css/navigation';
 import 'swiper/css';
 
 import Data from '../Data/data.json'
 
 function ArtistSection() {
     return(
-        <section className='artist-container'>
+        <section className='artist-container noselect'>
             <div className='artist-title'>
                 <h3>Meet the <span>Artists</span></h3>
             </div>
             <div className='swiper-container'>
                 <Swiper
-                    navigation={true}
+                    navigation
                     autoHeight={true}
                     spaceBetween={10}
                     slidesPerView={1}
-                    autoplay = {true}
+                    autoplay = {{delay: 1500}}
                     pagination={{ clickable: true }}
                     // onSlideChange={() => console.log('slide change')}
                     // onSwiper={(swiper) => console.log(swiper)}

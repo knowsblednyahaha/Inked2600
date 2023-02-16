@@ -2,7 +2,7 @@ import './Contact-Hero.scss';
 
 function ContactHero() {
     return(
-        <section className='contact-hero-container'>
+        <section className='contact-hero-container noselect'>
             <div className='marquee'>
                 <h5>
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -

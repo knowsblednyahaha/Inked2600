@@ -1,0 +1,85 @@
+@media screen and (max-device-width: 1199px){
+    .cursor{
+        display: none;
+    }
+}
+@media screen and (min-device-width: 1200px){
+    .cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        contain: layout style size;
+        pointer-events: none;
+        &.media-blend {
+            z-index: 100;
+            mix-blend-mode: difference;
+            .cursor-big-circle{
+                mix-blend-mode: difference;
+            }
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            top: -24px;
+            left: -24px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            transform: scale(0.2);
+            background: var(--cursor-hover, #fff);
+            border-radius: 50%;
+        }
+        .cursor-big-circle{
+            display: block;
+            height: 200px;
+            width: 200px;
+            background: white;
+            overflow: hidden;
+            border-radius: 100%;
+            transform: scale(0);
+            margin: -95px 0 0 -95px;
+            position: relative;
+        }
+        .cursor-about-hover{
+            background: url(/img/home-1.jpg) no-repeat 50% 70%;
+            width: 23vw;
+            height: 20vh;
+            overflow: hidden;
+            border-radius: 20% / 50%;
+            opacity: 0;
+            margin: -200px 0 0 -200px;
+            position: relative;
+            z-index: 0;
+        }
+        .cursor-artist-hover{
+            width: 15vh;
+            height: 15vh;
+            font-size: 1.25vw;
+            font-weight: 600;
+            line-height: 100%;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: white;
+            border-radius: 100%;
+            margin: -9vw 0 0 -4vw;
+            position: relative;
+            opacity: 0;
+        }
+        .cursor-contact-hover{
+            font-size: 3vw;
+            width: 6.5vw;
+            height: 12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 100%;
+            margin: -7vw 0 0 -3.5vw;
+            opacity: 0;
+        }
+    }
+}
