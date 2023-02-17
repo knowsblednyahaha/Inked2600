@@ -13,7 +13,7 @@ export default class Cursor {
         this.Text = document.querySelector(".hover-text");
         this.Img = document.querySelectorAll(".swiper-container .image-container");
         this.Hi = document.querySelector(".big-text-container a");
-        console.log(this.Hi);
+        // console.log(this.Hi);
         this.bounds = this.Cursor.getBoundingClientRect();
         this.cursorConfigs = {
             x: { previous: 0, current: 0, amt: 0.2 },

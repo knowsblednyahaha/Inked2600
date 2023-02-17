@@ -47,7 +47,7 @@
         text-align: center;
     }
     .image-container img{
-        width: 90%;
+        width: 85%;
         height: 70vh;
     }
     .text-container {
@@ -68,6 +68,17 @@
             display: none;
         }     
     }
+    .swiper-button-prev{
+        position: absolute !important;
+        left: 0 !important;
+        color: #FFF !important;
+    }
+    .swiper-button-next{
+        position: absolute !important;
+        right: 0% !important;
+        left: auto;
+        color: #FFF !important;
+    }
 }
 // fortablets and small laptop screens
 @media screen and (min-device-width: 768px) and (max-device-width: 1199px){
@@ -83,7 +94,7 @@
         left: 0;
         padding: 0;
         margin-left: 5%;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .artist-title h3{
         font-size: 3vw;
@@ -133,6 +144,20 @@
             display: none;
         }
     }
+    .swiper-button-prev{
+        position: absolute !important;
+        top: 5% !important;
+        right: 15% !important;
+        left: auto !important;
+        color: #FFF !important;
+    }
+    .swiper-button-next{
+        position: absolute !important;
+        top: 5% !important;
+        right: 5% !important;
+        left: auto;
+        color: #FFF !important;
+    }
 }
 // for large laptop screens and small desktop screens
 @media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
@@ -179,7 +204,7 @@
     }
     .text-container h4{
         width: 50% !important;
-        font-size: 13vh !important;
+        font-size: 12vh !important;
         font-weight: 700;
         line-height: 100%; 
         padding: 0;
@@ -190,7 +215,7 @@
         -webkit-text-stroke: .25px white;
     }
     .text-container p{
-        width: 100%;
+        width: 80%;
         font-size: 4vh;
         font-weight: 300;
         line-height: 100%;
@@ -216,15 +241,17 @@
     }
     .swiper-button-prev{
         position: absolute !important;
-        top: 5%;
+        top: 5% !important;
         right: 20% !important;
-        left: auto;
+        left: auto !important;
+        color: #FFF !important;
     }
     .swiper-button-next{
         position: absolute !important;
         top: 5% !important;
         right: 10% !important;
         left: auto;
+        color: #FFF !important;
     }
 }
 // for large desktop screens
@@ -272,7 +299,7 @@
     }
     .text-container h4{
         width: 100%;
-        font-size: 13vh !important;
+        font-size: 12vh !important;
         font-weight: 700;
         line-height: 100%; 
         padding: 0;
@@ -283,7 +310,7 @@
         -webkit-text-stroke: .25px white;
     }
     .text-container p{
-        width: 100%;
+        width: 80%;
         font-size: 5vh;
         font-weight: 300;
         line-height: 100%;
