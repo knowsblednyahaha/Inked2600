@@ -10,7 +10,7 @@ function Navbar() {
                 </div>
                 <div className="nav-menu">
                     <div>
-                        <ThemeToggle/>
+                        <ThemeToggle />
                     </div>
                     {/* <h3>Menu</h3> */}
                 </div>
