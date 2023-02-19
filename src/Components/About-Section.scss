@@ -10,13 +10,13 @@
     font-weight: 500;
 }
 .about-text a{
-    color: var(--body_color);
+    color: #5C5C5C;
     border-bottom: 1px solid #5C5C5C;
     z-index: 10;
 }
 .about-text a:hover{
     color: var(--body_color);
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid var(--body_color);
 }
 // for mobile device
 @media screen and (max-device-width: 767px){

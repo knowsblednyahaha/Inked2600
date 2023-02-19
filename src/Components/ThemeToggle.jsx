@@ -13,10 +13,12 @@ export default function ThemeToggle() {
     localStorage.setItem("selectedTheme", "light");
   };
   setDarkMode();
-  const toggleTheme = (e) => {
-    if(e.target.checked) setLightMode();
-    else setDarkMode();
-  };
+  function toggleTheme(e) {
+    if (e.target.checked)
+      setLightMode();
+    else
+      setDarkMode();
+  }
 
   const selectedTheme = localStorage.getItem("selectedTheme");
 
@@ -31,7 +33,7 @@ export default function ThemeToggle() {
         className="toggle"
         type="checkbox"
         onChange={toggleTheme}
-        defaultChecked={selectedTheme === "dark"}
+        // defaultChecked={selectedTheme === "dark"}
         ></input>
     </div>
   )
