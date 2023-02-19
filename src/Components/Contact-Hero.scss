@@ -94,8 +94,8 @@
   font-size: 1.25rem;
 }
 .social-media-item{
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-top: 1px solid var(--body_color);
+  border-bottom: 1px solid var(--body_color);
   width: 100%;
   padding: 1rem 0;
   cursor: pointer;

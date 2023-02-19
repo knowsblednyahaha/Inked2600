@@ -21,7 +21,7 @@
     object-fit: cover;
 }
 .text-container span {
-    -webkit-text-stroke: 2px #000000;
+    -webkit-text-stroke: 2px var(--body_background);
 }
 .swiper-slide-active{
     z-index: 100;
@@ -62,7 +62,7 @@
             line-height: 90%; 
             z-index: 20;
             color: rgb(19, 19, 19);
-            -webkit-text-stroke: .25px white; 
+            -webkit-text-stroke: .25px var(--body_color); 
         }
         p{
             display: none;
@@ -125,7 +125,7 @@
         overflow: visible;
         z-index: 10;
         color: rgb(19, 19, 19);
-        -webkit-text-stroke: .25px white;
+        -webkit-text-stroke: .25px var(--body_color);
     }
     .text-container p{
         display: none;
@@ -212,7 +212,7 @@
         overflow: visible;
         z-index: 10;
         color: rgb(19, 19, 19);
-        -webkit-text-stroke: .25px white;
+        -webkit-text-stroke: .25px var(--body_color);
     }
     .text-container p{
         width: 80%;
@@ -307,7 +307,7 @@
         overflow: visible;
         z-index: 10;
         color: rgb(19, 19, 19);
-        -webkit-text-stroke: .25px white;
+        -webkit-text-stroke: .25px var(--body_color);
     }
     .text-container p{
         width: 80%;
