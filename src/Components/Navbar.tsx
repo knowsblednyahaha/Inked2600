@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import ThemeToggle from '../DLTheme/ThemeToggle';
+import ThemeToggle from './ThemeToggle';
 
 function Navbar() {
     return(
