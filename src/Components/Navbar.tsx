@@ -1,4 +1,5 @@
 import './Navbar.scss';
+import ThemeToggle from '../DLTheme/ThemeToggle';
 
 function Navbar() {
     return(
@@ -9,7 +10,7 @@ function Navbar() {
                 </div>
                 <div className="nav-menu">
                     <div>
-                        
+                        <ThemeToggle/>
                     </div>
                     {/* <h3>Menu</h3> */}
                 </div>

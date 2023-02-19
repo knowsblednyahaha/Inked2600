@@ -5,9 +5,9 @@ function HomeHero() {
     return(
         <section className='home-hero'>
             <div className='text-header-container noselect'>
-                <div className='text-header'>Distinctive</div>
-                <div className='text-header'>Tattoo Artists</div>
-                <div className='text-header'>in Baguio City</div>
+                <h1 className='text-header'>Distinctive</h1>
+                <h1 className='text-header'>Tattoo Artists</h1>
+                <h1 className='text-header'>in Baguio City</h1>
             </div>
             <div className='home-image-container'>
                 <div className='home-image'>

@@ -1,13 +1,13 @@
 import './Artist-Section.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
+import SwiperCore, { Autoplay,Pagination, Navigation } from "swiper";
 import 'swiper/css/navigation';
 import 'swiper/css';
 
 import Data from '../Data/data.json'
 
 function ArtistSection() {
-    SwiperCore.use([Autoplay])
+    SwiperCore.use([Autoplay]);
     return(
         <section className='artist-container noselect'>
             <div className='artist-title'>
@@ -15,16 +15,16 @@ function ArtistSection() {
             </div>
             <div className='swiper-container'>
                 <Swiper
-                    modules={[Autoplay, Pagination, Navigation]}
-                    navigation
+                    modules={[Pagination, Navigation]}
+                    navigation={true}
                     autoHeight={true}
                     spaceBetween={10}
                     slidesPerView={1}
-                    autoplay = {{
+                    autoplay={{
                         delay: 3000,
-                        disableOnInteraction: true
+                        disableOnInteraction: false
                     }}
-                    pagination={{ clickable: true }}
+                    // pagination={{ clickable: true }}
                     // onSlideChange={() => console.log('slide change')}
                     // onSwiper={(swiper) => console.log(swiper)}
                     

@@ -27,7 +27,7 @@
             width: 60px;
             height: 60px;
             transform: scale(0.2);
-            background: var(--cursor-hover, #fff);
+            background: var(--body_color);
             border-radius: 50%;
         }
         .cursor-big-circle{
@@ -43,20 +43,19 @@
         }
         .cursor-about-hover{
             background: url(/img/home-1.jpg) no-repeat 50% 70%;
-            width: 23vw;
-            height: 20vh;
+            width: 430px;
+            height: 200px;
             overflow: hidden;
             border-radius: 20% / 50%;
             opacity: 0;
-            overflow: hidden;
             margin: -200px 0 0 -200px;
             position: relative;
             z-index: 0;
         }
         .cursor-artist-hover{
-            width: 15vh;
-            height: 15vh;
-            font-size: 1.25vw;
+            width: 150px;
+            height: 150px;
+            font-size: 1.25em;
             font-weight: 600;
             line-height: 100%;
             overflow: hidden;
@@ -67,22 +66,23 @@
             text-align: center;
             background: white;
             border-radius: 100%;
-            margin: -9vw 0 0 -4vw;
+            margin: -180px 0 0 -70px;
             position: relative;
             opacity: 0;
         }
         .cursor-contact-hover{
-            font-size: 3vw;
-            width: 6.5vw;
-            height: 12vh;
+            font-size: 3em;
+            width: 120px;
+            height: 120px;
             display: flex;
             justify-content: center;
             overflow: hidden;
             align-items: center;
             background-color: white;
             border-radius: 100%;
-            margin: -7vw 0 0 -3.5vw;
+            margin: -130px 0 0 -60px;
             opacity: 0;
+            position: relative;
         }
     }
 }

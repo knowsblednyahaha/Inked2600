@@ -4,20 +4,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', Arial;
-    color: #FFF;
+}
+:root {
+    --body_background: #FFF;
+    --body_color: #000;
+}
+[data-theme="dark"] {
+    --body_background: #191818;
+    --body_color: #FFF;
 }
 body {
-    background-color: #191818;
-    color: #FFF;
+    background-color: var(--body_background);
+    color: var(--body_color);
 }
 
 ul {
     list-style: none;
 }
 
-a {
+a, span{
     text-decoration: none;
-    color: #FFF;
+    color: var(--body_color);
 }
 
 .noselect {

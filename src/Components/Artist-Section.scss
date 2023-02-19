@@ -71,13 +71,13 @@
     .swiper-button-prev{
         position: absolute !important;
         left: 0 !important;
-        color: #FFF !important;
+        color: var(--body_color) !important;
     }
     .swiper-button-next{
         position: absolute !important;
         right: 0% !important;
         left: auto;
-        color: #FFF !important;
+        color: var(--body_color) !important;
     }
 }
 // fortablets and small laptop screens
@@ -149,14 +149,14 @@
         top: 5% !important;
         right: 15% !important;
         left: auto !important;
-        color: #FFF !important;
+        color: var(--body_color) !important;
     }
     .swiper-button-next{
         position: absolute !important;
         top: 5% !important;
         right: 5% !important;
         left: auto;
-        color: #FFF !important;
+        color: var(--body_color) !important;
     }
 }
 // for large laptop screens and small desktop screens
@@ -244,14 +244,14 @@
         top: 5% !important;
         right: 20% !important;
         left: auto !important;
-        color: #FFF !important;
+        color: var(--body_color) !important;
     }
     .swiper-button-next{
         position: absolute !important;
         top: 5% !important;
         right: 10% !important;
         left: auto;
-        color: #FFF !important;
+        color: var(--body_color) !important;
     }
 }
 // for large desktop screens
@@ -339,12 +339,12 @@
         top: 5% !important;
         right: 20% !important;
         left: auto !important;
-        color: #FFF !important;
+        color: var(--body_color) !important;
     }
     .swiper-button-next{
         position: absolute !important;
         top: 5% !important;
         right: 10% !important;
-        color: #FFF !important;
+        color: var(--body_color) !important;
     }
 }

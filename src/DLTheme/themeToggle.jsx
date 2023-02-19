@@ -1,8 +1,38 @@
 import React from 'react'
-import React, { useState, useEffect } from 'react';
+import {useState, useEffect} from 'react';
+import "./ThemeToggle.scss"
 
-export default function themeToggle() {
+export default function ThemeToggle() {
+  const setDarkMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "dark");
+    localStorage.setItem("selectedTheme", "dark");
+  };
+
+  const setLightMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "light");
+    localStorage.setItem("selectedTheme", "light");
+  };
+  setDarkMode();
+  const toggleTheme = (e) => {
+    if(e.target.checked) setLightMode();
+    else setDarkMode();
+  };
+
+  const selectedTheme = localStorage.getItem("selectedTheme");
+
+  if(selectedTheme === "dark"){
+    setDarkMode();
+  }
+
   return (
-    <div>toggleSvg</div>
+    <div>
+      <input 
+        id="toggle"
+        className="toggle"
+        type="checkbox"
+        onChange={toggleTheme}
+        defaultChecked={selectedTheme === "dark"}
+        ></input>
+    </div>
   )
 }

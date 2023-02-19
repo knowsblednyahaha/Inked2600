@@ -18,7 +18,7 @@ export default function CursoElement()  {
     <div className="cursor">
         <div className="cursor-big-circle"></div>
         <div className='cursor-about-hover'></div>
-        <div className="cursor-artist-hover">View Portfolio</div>
+        <div className="cursor-artist-hover">View <br/> Portfolio</div>
         <div className="cursor-contact-hover">👋</div>
     </div>
     )
