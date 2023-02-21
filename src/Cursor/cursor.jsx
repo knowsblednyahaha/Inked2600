@@ -1,5 +1,7 @@
+import {useState, useEffect} from 'react'
 import { gsap } from "gsap";
 import { lerp, getMousePos, getSiblings } from "./utils.js";
+
 
 // Grab the mouse position and set it to mouse state
 let mouse = { x: 0, y: 0 };
@@ -14,6 +16,11 @@ export default class Cursor {
         this.Img = document.querySelectorAll(".swiper-container .image-container");
         this.Hi = document.querySelector(".big-text-container a");
         // console.log(this.Hi);
+        
+        // this.selectedTheme = localStorage.getItem("selectedTheme");
+        // const [theme, setTheme] = useState("");
+        
+        // console.log(selectedTheme)
         this.bounds = this.Cursor.getBoundingClientRect();
         this.cursorConfigs = {
             x: { previous: 0, current: 0, amt: 0.2 },
@@ -103,20 +110,34 @@ export default class Cursor {
         });
 
     }
+    
     onScaleMouse() {
         this.Item.forEach((link) => {
             if (link.matches(":hover")) {
                 this.ScaleCursor(this.Cursor.children[0], 0.8);
             }
+            let backcolor = document.querySelector("body").style.getPropertyValue("background-color");
             link.addEventListener("mouseenter", () => {
                 this.Cursor.classList.add("media-blend");
                 this.ScaleCursor(this.Cursor.children[0], 0.8);
-                document.querySelector('.cursor').style.setProperty("--cursor-hover", "black");
+                document.querySelector('.cursor').style.setProperty("--body_color", "transparent");
+                // if(this.selectedTheme === "light") {
+                //     document.querySelector('.cursor').style.setProperty("--body_color", "black");
+                // }else{
+                //     document.querySelector('.cursor').style.setProperty("--body_color", "black");
+                // }
             });
             link.addEventListener("mouseleave", () => {
                 this.Cursor.classList.remove("media-blend");
                 this.ScaleCursor(this.Cursor.children[0], 0);
-                document.querySelector('.cursor').style.setProperty("--cursor-hover", "white");
+                console.log(backcolor);
+                document.querySelector('.cursor').style.setProperty("--body_color", backcolor);
+                // if(this.selectedTheme === "light") {
+                //     document.querySelector('.cursor').style.setProperty("--body_color", "black");
+                // }
+                // else{
+                //     document.querySelector('.cursor').style.setProperty("--body_color", "white");
+                // }
             });
         });
     }

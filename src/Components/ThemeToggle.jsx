@@ -12,7 +12,7 @@ export default function ThemeToggle() {
     document.querySelector("body").setAttribute("data-theme", "light");
     localStorage.setItem("selectedTheme", "light");
   };
-  setDarkMode();
+  // setDarkMode();
   function toggleTheme(e) {
     if (e.target.checked)
       setLightMode();
