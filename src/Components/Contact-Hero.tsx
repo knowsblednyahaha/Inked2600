@@ -12,7 +12,7 @@ function ContactHero() {
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
-                    get to <span className='white'>know</span> us - get to <span className='white'>know</span> us
+                    get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                 </h5>
                 <br />
                 <h5>
@@ -23,7 +23,7 @@ function ContactHero() {
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
-                    get to <span className='white'>know</span> us - get to <span className='white'>know</span> us
+                    get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                 </h5>
             </div>
             <div className='contact-text-container'>
