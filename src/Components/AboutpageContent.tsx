@@ -1,4 +1,3 @@
-import React from 'react'
 import "./AboutpageContent.scss"
 
 export default function AboutpageContent() {
