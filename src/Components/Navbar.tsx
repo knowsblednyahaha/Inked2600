@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import ThemeToggle from './ThemeToggle';
 
@@ -6,7 +7,7 @@ function Navbar() {
         <header>
             <nav className="navbar">
                 <div className="nav-logo">
-                    <h1>Inked <br/>2600</h1>
+                    <Link to={'/'}><h1>Inked <br/>2600</h1></Link>
                 </div>
                 <div className="nav-menu">
                     <div>

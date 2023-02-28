@@ -1,6 +1,11 @@
+//Components
+import Navbar from '../Components/Navbar';
 
 export const Artistpage = () => {
   return (
-    <div>Artistpage</div>
+    <>
+      <Navbar/>
+      <div>Artistpage</div>
+    </>
   )
 }

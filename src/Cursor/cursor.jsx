@@ -37,10 +37,28 @@ export default class Cursor {
             opacity: 1,
             });
 
-            //Execute Scale
-            this.onScaleMouse();
-            //Execute Hover Text
-            this.onHover();
+            // //Execute Scale
+            // this.onScaleMouse();
+            // //Execute Hover Text
+            // this.onHover();
+            // console.log("rendered")
+            if(window.location.pathname === '/'){
+                //this is JavaScript for the home page
+                //Execute Scale
+                this.onScaleMouse();
+                //Execute Hover Text
+                this.onHover();
+                console.log("rendered")
+            }
+            // else if(window.location.pathname === '/about'){
+            //     this.Text.removeEventListener(click, () => {
+            //         gsap.to(this.Cursor.children[1], {
+            //             duration: 0.6,
+            //             opacity: 1,
+            //             ease: "Power3.easeOut",
+            //         });
+            //     });
+            // }
 
             // The window.requestAnimationFrame() method tells the browser
             // that you wish to perform an animation and requests that the browser
@@ -62,7 +80,7 @@ export default class Cursor {
                 ease: "Power3.easeOut",
             });
         }
-        this.Text.addEventListener("mouseenter", () => {
+        this.Text.addEventListener("mouseover", () => {
             this.Cursor.classList.add("media-blend");
             gsap.to(this.Cursor.children[1], {
                 duration: 0.6,
@@ -70,11 +88,18 @@ export default class Cursor {
                 ease: "Power3.easeOut",
             });
         });
-        this.Text.addEventListener("mouseleave", () => {
+        this.Text.addEventListener("mouseout", () => {
             this.Cursor.classList.remove("media-blend");
             gsap.to(this.Cursor.children[1], {
                 duration: 0.6,
                 opacity:0,
+                ease: "Power3.easeOut",
+            });
+        });
+        this.Text.addEventListener("click", () => {
+            gsap.to(this.Cursor.children[1], {
+                duration: 0.6,
+                opacity: 0,
                 ease: "Power3.easeOut",
             });
         });
@@ -121,23 +146,11 @@ export default class Cursor {
                 this.Cursor.classList.add("media-blend");
                 this.ScaleCursor(this.Cursor.children[0], 0.8);
                 document.querySelector('.cursor').style.setProperty("--body_color", "transparent");
-                // if(this.selectedTheme === "light") {
-                //     document.querySelector('.cursor').style.setProperty("--body_color", "black");
-                // }else{
-                //     document.querySelector('.cursor').style.setProperty("--body_color", "black");
-                // }
             });
             link.addEventListener("mouseleave", () => {
                 this.Cursor.classList.remove("media-blend");
                 this.ScaleCursor(this.Cursor.children[0], 0);
-                console.log(backcolor);
                 document.querySelector('.cursor').style.setProperty("--body_color", backcolor);
-                // if(this.selectedTheme === "light") {
-                //     document.querySelector('.cursor').style.setProperty("--body_color", "black");
-                // }
-                // else{
-                //     document.querySelector('.cursor').style.setProperty("--body_color", "white");
-                // }
             });
         });
     }

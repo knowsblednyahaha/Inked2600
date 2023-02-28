@@ -9,12 +9,12 @@
 .about-text{
     font-weight: 500;
 }
-.about-text a{
+.about-text span{
     color: #5C5C5C;
     border-bottom: 1px solid #5C5C5C;
     z-index: 10;
 }
-.about-text a:hover{
+.about-text span:hover{
     color: var(--body_color);
     border-bottom: 1px solid var(--body_color);
 }

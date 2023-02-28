@@ -1,7 +1,7 @@
 import React from 'react'
 import './Cursor.scss'
 import {useEffect} from 'react'
-import Cursor from "./cursor";
+import Cursor, {} from "./cursor";
 import { gsap } from "gsap";
 
 export default function CursoElement()  {

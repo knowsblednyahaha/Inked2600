@@ -1,7 +1,8 @@
 import {Route, Routes} from 'react-router-dom'
 
 import {Homepage} from './Pages/Homepage';
-import {Artistpage} from './Pages/Artistpage'
+import {Aboutpage} from './Pages/Aboutpage';
+import {Artistpage} from './Pages/Artistpage';
 import CursorElement from './Cursor/CursorElement';
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Homepage />} />
+        <Route path='/about' element={<Aboutpage />} />
         <Route path='/artist' element={<Artistpage />} />
       </Routes>
       <CursorElement/>

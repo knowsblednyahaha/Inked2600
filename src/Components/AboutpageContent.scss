@@ -1,0 +1,11 @@
+.Aboutpage-Container {
+    display: flex;
+    justify-content: center;
+    padding: 5% 5%;
+    pointer-events: none;
+    p {
+        font-size: 6vw;
+        font-weight: 600;
+        line-height: auto;
+    }
+}

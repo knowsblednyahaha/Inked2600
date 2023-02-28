@@ -22,9 +22,9 @@ export default function ThemeToggle() {
 
   const selectedTheme = localStorage.getItem("selectedTheme");
 
-  if(selectedTheme === "dark"){
-    setDarkMode();
-  }
+  // if(selectedTheme === "dark"){
+  //   setDarkMode();
+  // }
 
   return (
     <div>
