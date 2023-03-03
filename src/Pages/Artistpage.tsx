@@ -1,11 +1,17 @@
 //Components
 import Navbar from '../Components/Navbar';
 
+import Data from '../Data/data.json'
+
 export const Artistpage = () => {
   return (
     <>
       <Navbar/>
-      <div>Artistpage</div>
+      {
+        Data.artist.map( data => {
+          
+        })
+      }
     </>
   )
 }
