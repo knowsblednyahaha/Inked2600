@@ -9,7 +9,12 @@ export const Artistpage = () => {
       <Navbar/>
       {
         Data.artist.map( data => {
-          
+          <div className="artist container">
+            <div></div>
+            <div>
+              <img src={data.dp} alt={data.dp} />
+            </div>
+          </div>
         })
       }
     </>
