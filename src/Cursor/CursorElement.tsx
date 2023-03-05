@@ -1,4 +1,3 @@
-import React from 'react'
 import './Cursor.scss'
 import {useEffect} from 'react'
 import Cursor, {} from "./cursor";
