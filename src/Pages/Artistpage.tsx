@@ -7,7 +7,7 @@ import Axios from 'axios'
 
 export const Artistpage = () => {
 
-  const [artists, setArtist] = useState([]);
+  // const [artists, setArtist] = useState([]);
 
   useEffect(() => {
     Axios
