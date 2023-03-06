@@ -48,7 +48,7 @@ export default class Cursor {
                 this.onScaleMouse();
                 //Execute Hover Text
                 this.onHover();
-                console.log("rendered")
+                // console.log("rendered")
             }
             // else if(window.location.pathname === '/about'){
             //     this.Text.removeEventListener(click, () => {
