@@ -3,7 +3,6 @@ import {Route, Routes} from 'react-router-dom'
 import {Homepage} from './Pages/Homepage';
 import {Aboutpage} from './Pages/Aboutpage';
 import {Artistpage} from './Pages/Artistpage';
-import CursorElement from './Cursor/CursorElement';
 
 
 
@@ -15,7 +14,6 @@ function App() {
         <Route path='/about' element={<Aboutpage />} />
         <Route path='/artist' element={<Artistpage />} />
       </Routes>
-      {/* <CursorElement/> */}
     </>
   )
 }
