@@ -2,6 +2,7 @@
 import Navbar from '../Components/Navbar';
 import ContactHero from '../Components/Contact-Hero';
 import Footer from '../Components/Footer';
+import CursorElement from '../Cursor/CursorElement';
 import {useEffect} from 'react'
 import Axios from 'axios'
 
@@ -38,6 +39,7 @@ export const Artistpage = () => {
           // </div> */}
       <ContactHero />
       <Footer />
+      <CursorElement/>
     </>
   )
 }

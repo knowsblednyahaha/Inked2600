@@ -5,6 +5,7 @@ import AboutSection from '../Components/About-Section';
 import ArtistSection from '../Components/Artist-Section';
 import ContactHero from '../Components/Contact-Hero';
 import Footer from '../Components/Footer';
+import CursorElement from '../Cursor/CursorElement';
 
 export const Homepage = () => {
   
@@ -16,6 +17,7 @@ export const Homepage = () => {
       <ArtistSection/>
       <ContactHero/>
       <Footer/>
+      <CursorElement/>
     </div>
   )
 }

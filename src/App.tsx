@@ -15,7 +15,7 @@ function App() {
         <Route path='/about' element={<Aboutpage />} />
         <Route path='/artist' element={<Artistpage />} />
       </Routes>
-      <CursorElement/>
+      {/* <CursorElement/> */}
     </>
   )
 }
