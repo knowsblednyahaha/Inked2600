@@ -48,17 +48,15 @@ export default class Cursor {
                 this.onScaleMouse();
                 //Execute Hover Text
                 this.onHover();
+                this.hoverContactPage();
                 // console.log("rendered")
             }
-            // else if(window.location.pathname === '/about'){
-            //     this.Text.removeEventListener(click, () => {
-            //         gsap.to(this.Cursor.children[1], {
-            //             duration: 0.6,
-            //             opacity: 1,
-            //             ease: "Power3.easeOut",
-            //         });
-            //     });
-            // }
+            else if(window.location.pathname === '/about'){
+                this.hoverContactPage();
+            }
+            else if(window.location.pathname === '/artist/1'){
+                this.hoverContactPage();
+            }
 
             // The window.requestAnimationFrame() method tells the browser
             // that you wish to perform an animation and requests that the browser
@@ -119,6 +117,8 @@ export default class Cursor {
                 });
             });
         });
+    }
+    hoverContactPage(){
         this.Hi.addEventListener("mouseenter", () => {
             gsap.to(this.Cursor.children[3], {
                 duration: 0.6,
@@ -133,7 +133,6 @@ export default class Cursor {
                 ease: "Power3.easeOut",
             });
         });
-
     }
     
     onScaleMouse() {

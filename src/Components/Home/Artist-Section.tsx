@@ -4,7 +4,8 @@ import SwiperCore, { Autoplay,Pagination, Navigation } from "swiper";
 import 'swiper/css/navigation';
 import 'swiper/css';
 
-import Data from '../Data/data.json'
+import Data from '../../Data/data.json'
+import { Link } from "react-router-dom"
 
 function ArtistSection() {
     SwiperCore.use([Autoplay]);
@@ -35,7 +36,7 @@ function ArtistSection() {
                                 <SwiperSlide style={{textAlign: "center"}} key={data.id}>
                                     <div className='artist-info-container'>
                                     <div className='image-container'>
-                                        <img key={data.dp} src={data.dp} alt="" />
+                                        <Link to={`/artist/${data.id}`} onClick={() => window.scrollTo(0, 0)}><img key={data.dp} src={data.dp} alt={data.dp} className="artist-img"/></Link>
                                     </div>
                                     <div className='text-container'>
                                         <h4 key={data.lastname}><span key={data.firstname}>{data.firstname}</span>&nbsp; {data.lastname}</h4>

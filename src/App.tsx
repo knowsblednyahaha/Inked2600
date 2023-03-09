@@ -2,7 +2,7 @@ import {Route, Routes} from 'react-router-dom'
 
 import {Homepage} from './Pages/Homepage';
 import {Aboutpage} from './Pages/Aboutpage';
-import {Artistpage} from './Pages/Artistpage';
+import {Artistpage} from './Components/Artist/Artistpage';
 
 
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/about' element={<Aboutpage />} />
-        <Route path='/artist' element={<Artistpage />} />
+        <Route path='/artist/:id' element={<Artistpage />} />
       </Routes>
     </>
   )

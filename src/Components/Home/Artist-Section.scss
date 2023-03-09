@@ -17,6 +17,9 @@
     width: 100%;
     position: relative;
 }
+.image-container a {
+    width: 100%;
+}
 .image-container img{
     object-fit: cover;
 }
