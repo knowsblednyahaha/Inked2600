@@ -18,10 +18,11 @@ export const Artistpage = () => {
       <Navbar/>
       <div className="artistpage-container">
         <div className="artistpage-hero">
-          <div>
-            <h2>{data.firstname}<span>{data.lastname}</span></h2>
+          <div className='artist-name-header'>
+            <h2>{data.firstname} <span>{data.lastname}</span></h2>
+            <p key={data.artistdesc}>{data.artistdesc}</p>
           </div>
-          <div>
+          <div className='artist-img-header'>
             <img src={data.dp} alt={data.dp} />
           </div>
         </div>
