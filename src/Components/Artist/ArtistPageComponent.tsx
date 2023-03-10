@@ -1,13 +1,9 @@
 //Components
-import Navbar from '../Navbar';
-import ContactHero from '../Contact-Hero';
-import Footer from '../Footer';
-import CursorElement from '../../Cursor/CursorElement';
 import Data from '../../Data/data.json'
-import "./Artistpage.scss"
+import "./ArtistPageComponent.scss"
 import { useParams } from 'react-router-dom';
 
-export const Artistpage = () => {
+export default function ArtistPageComponent() {
 
   const params = useParams();
   const artistId = params.id;
@@ -15,7 +11,6 @@ export const Artistpage = () => {
   
   return (
     <>
-      <Navbar/>
       <div className="artistpage-container">
         <div className="artistpage-hero">
           <div className='artist-name-header'>
@@ -30,9 +25,6 @@ export const Artistpage = () => {
           <div>{data.photos}</div>
         </div>
       </div>
-      <ContactHero />
-      <Footer />
-      <CursorElement/>
     </>
   )
 }
