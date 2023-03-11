@@ -41,7 +41,8 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fill, 350px);
-    grid-auto-rows: 30em;
+    // grid-auto-rows: 30em;
+    grid-gap: 10px;
     justify-content: center;
 }
 .card img{
@@ -49,9 +50,6 @@
     padding: 0;
     margin: 15px 10px;
     border-radius: 16px;
-    background-color: red;
-    
-    
 }
 // for mobile device
 @media screen and (max-device-width: 767px){
