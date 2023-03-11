@@ -1,3 +1,15 @@
+:root {
+    // artist page
+    --fs-mb-h: clamp(3em, 5vw + 1em, 4.5em);
+    --fs-tab-h: clamp(4em, 5vw + 1em, 5.5em);
+    --fs-lap-h: clamp(6em, 7vw + 1em, 8.5em);
+    --fs-desk-h: clamp(6em, 7vw + 1em, 8.5em);
+
+    --fs-mb-p: clamp(5em, 5vw + 1em, 6.5em);
+    --fs-tab-p: clamp(3em, 4.75vw + 1em, 6em);
+    --fs-lap-p: clamp(5em, 5vw + 1em, 6.5em);
+    --fs-desk-p: clamp(5em, 5vw + 1em, 6.5em);
+}
 .artistpage-container{
     padding: 0 2.5%;
 }
@@ -25,4 +37,40 @@
     width: 30vw;
     height: 70vh;
     object-fit: cover;
+}
+// for mobile device
+@media screen and (max-device-width: 767px){
+    .artist-name-header h2 {
+        font-size: var(--fs-mb-h);
+    }
+    .artist-name-header p {
+        font-size: var(--fs-mb-p);
+    }
+}
+// fortablets and small laptop screens
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px){
+    .artist-name-header h2 {
+        font-size: var(--fs-tab-h);
+    }
+    .artist-name-header p {
+        font-size: var(--fs-tab-p);
+    }
+}
+// for large laptop screens and small desktop screens
+@media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
+    .artist-name-header h2 {
+        font-size: var(--fs-lap-h);
+    }
+    .artist-name-header p {
+        font-size: var(--fs-lap-p);
+    }
+}
+// for large desktop screens
+@media screen and (min-device-width: 1920px){
+    .artist-name-header h2 {
+        font-size: var(--fs-desk-h);
+    }
+    .artist-name-header p {
+        font-size: var(--fs-desk-p);
+    }
 }
