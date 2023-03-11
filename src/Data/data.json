@@ -6,7 +6,26 @@
         "lastname": "Malupet",
         "artistdesc": "Specialized in Black and Grey",
         "dp": "/img/1.jpg",
-        "photos": ["p1.jpg"]
+        "photos": [
+            "/img/roniel/p01.jpg",
+            "/img/roniel/p02.jpg",
+            "/img/roniel/p03.jpg",
+            "/img/roniel/p04.jpg",
+            "/img/roniel/p05.jpg",
+            "/img/roniel/p06.jpg",
+            "/img/roniel/p07.jpg",
+            "/img/roniel/p08.jpg",
+            "/img/roniel/p09.jpg",
+            "/img/roniel/p10.jpg",
+            "/img/roniel/p11.jpg",
+            "/img/roniel/p12.jpg",
+            "/img/roniel/p13.jpg",
+            "/img/roniel/p14.jpg",
+            "/img/roniel/p15.jpg",
+            "/img/roniel/p16.jpg",
+            "/img/roniel/p17.jpg",
+            "/img/roniel/p18.jpg"
+        ]
     },
     {
         "id": 2,

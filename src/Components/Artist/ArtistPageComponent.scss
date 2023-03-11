@@ -1,15 +1,3 @@
-:root {
-    // artist page
-    --fs-mb-h: clamp(3em, 5vw + 1em, 4.5em);
-    --fs-tab-h: clamp(4em, 5vw + 1em, 5.5em);
-    --fs-lap-h: clamp(6em, 7vw + 1em, 8.5em);
-    --fs-desk-h: clamp(6em, 7vw + 1em, 8.5em);
-
-    --fs-mb-p: clamp(5em, 5vw + 1em, 6.5em);
-    --fs-tab-p: clamp(3em, 4.75vw + 1em, 6em);
-    --fs-lap-p: clamp(5em, 5vw + 1em, 6.5em);
-    --fs-desk-p: clamp(5em, 5vw + 1em, 6.5em);
-}
 .artistpage-container{
     padding: 0 2.5%;
 }
@@ -37,6 +25,33 @@
     width: 30vw;
     height: 70vh;
     object-fit: cover;
+}
+.artist-works-container {
+    margin: 0;
+    padding: 5em 0;
+    position: relative;
+}
+.artist-works {
+    margin: 0;
+    padding: 0;
+    width: 95vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-auto-rows: 30em;
+    justify-content: center;
+}
+.card img{
+    width: 100%;
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: 16px;
+    background-color: red;
+    
+    
 }
 // for mobile device
 @media screen and (max-device-width: 767px){

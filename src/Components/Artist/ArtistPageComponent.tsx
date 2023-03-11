@@ -1,6 +1,7 @@
 //Components
 import Data from '../../Data/data.json'
 import "./ArtistPageComponent.scss"
+import uuid from 'react-uuid';
 import { useParams } from 'react-router-dom';
 
 export default function ArtistPageComponent() {
@@ -21,8 +22,18 @@ export default function ArtistPageComponent() {
             <img src={data.dp} alt={data.dp} />
           </div>
         </div>
-        <div className="artist-works">
-          <div>{data.photos}</div>
+        <div className="artist-works-container">
+          <div className="artist-works">
+            {
+              data.photos.map( (item) => {
+                return (
+                  <div className="card" key={uuid()}>
+                    <img src={item} alt={item} />
+                  </div>
+                )
+              })
+            }
+            </div>
         </div>
       </div>
     </>

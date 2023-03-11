@@ -6,8 +6,8 @@ function AboutSection() {
         <section className='about-container'>
             <p className='about-text noselect'>
                 As a group of artists we want to show our art piece
-                and share them with you so you can get to 
-                <Link to={'/about'} onClick={() => window.scrollTo(0, 0)}><span className='hover-text'> know us</span></Link> 
+                and share them with you so you can get to&nbsp;
+                <Link to={'/about'} onClick={() => window.scrollTo(0, 0)}><span className='hover-text'>know us</span></Link> 
             </p>
         </section>
     )
