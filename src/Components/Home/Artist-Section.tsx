@@ -36,7 +36,9 @@ function ArtistSection() {
                                 <SwiperSlide style={{textAlign: "center"}} key={data.id}>
                                     <div className='artist-info-container'>
                                     <div className='image-container'>
-                                        <Link to={`/artist/${data.id}`} onClick={() => window.scrollTo(0, 0)}><img key={data.dp} src={data.dp} alt={data.dp} className="artist-img"/></Link>
+                                        <Link to={`/artist/${data.id}`} onClick={() => window.scrollTo(0, 0)} >
+                                            <img key={data.dp} src={data.dp} alt={data.dp} className="artist-img"/>
+                                        </Link>
                                     </div>
                                     <div className='text-container'>
                                         <h4 key={data.lastname}><span key={data.firstname}>{data.firstname}</span>&nbsp; {data.lastname}</h4>

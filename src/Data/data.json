@@ -33,7 +33,7 @@
         "lastname": "Malupet",
         "artistdesc": "Specialized in Black and Grey",
         "dp": "/img/2.jpg",
-        "photos": ["p1.jpg"]
+        "photos": []
     },
     {
         "id": 3,
@@ -41,7 +41,7 @@
         "lastname": "Malupet",
         "artistdesc": "Specialized in Black and Grey",
         "dp": "/img/3.jpg",
-        "photos": ["p1.jpg"]
+        "photos": []
     }
 ]
 }

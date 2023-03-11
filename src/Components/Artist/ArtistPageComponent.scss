@@ -30,6 +30,7 @@
     margin: 0;
     padding: 5em 0;
     position: relative;
+    
 }
 .artist-works {
     margin: 0;
@@ -41,23 +42,53 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fill, 350px);
-    // grid-auto-rows: 30em;
-    grid-gap: 10px;
+    // grid-auto-rows: 10px;
+    grid-gap: 20px 0;
+    break-inside: avoid;
     justify-content: center;
+    justify-items: center;
+}
+.card {
+    text-align: center;
 }
 .card img{
-    width: 100%;
+    width: 90%;
     padding: 0;
-    margin: 15px 10px;
+    // margin: 15px 10px;
     border-radius: 16px;
 }
 // for mobile device
 @media screen and (max-device-width: 767px){
+    .artistpage-hero{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 90vh;
+    }
+    .artist-name-header {
+        width: 100%;
+        margin-right: 0;
+        z-index: 10;
+        margin-top: -10%;
+        mix-blend-mode: difference;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .artist-img-header img{
+        width: 80vw;
+        height: 70vh;
+        object-fit: cover;
+    }
     .artist-name-header h2 {
+        text-align: center;
         font-size: var(--fs-mb-h);
     }
     .artist-name-header p {
         font-size: var(--fs-mb-p);
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
     }
 }
 // fortablets and small laptop screens

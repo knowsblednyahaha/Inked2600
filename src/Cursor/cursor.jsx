@@ -13,9 +13,9 @@ export default class Cursor {
         this.Cursor.style.opacity = 0;
         this.Item = document.querySelectorAll(".text-header");
         this.Text = document.querySelector(".hover-text");
-        this.Img = document.querySelectorAll(".swiper-container .image-container");
+        this.Img = document.querySelectorAll(".artist-img");
         this.Hi = document.querySelector(".big-text-container a");
-        // console.log(this.Hi);
+        // console.log(this.Img);
         
         // this.selectedTheme = localStorage.getItem("selectedTheme");
         // const [theme, setTheme] = useState("");
@@ -102,14 +102,14 @@ export default class Cursor {
             });
         });
         this.Img.forEach((img) => {
-            img.children[0].addEventListener("mouseenter", () => {
+            img.addEventListener("mouseenter", () => {
                 gsap.to(this.Cursor.children[2], {
                     duration: 0.6,
                     opacity:1,
                     ease: "Power3.easeOut",
                 });
             });
-            img.children[0].addEventListener("mouseleave", () => {
+            img.addEventListener("mouseleave", () => {
                 gsap.to(this.Cursor.children[2], {
                     duration: 0.6,
                     opacity:0,
