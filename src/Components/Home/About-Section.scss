@@ -25,27 +25,27 @@
         padding: 10% 5%;
     }
     .about-text{
-        font-size: 8vw;
+        font-size: var(--fs-mb-p-h);
     }
 }
 // fortablets and small laptop screens
 @media screen and (min-device-width: 768px) and (max-device-width: 1199px){
     .about-text{
-        font-size: 7vw;
+        font-size: var(--fs-tab-p-h);
         line-height: 1.2em;
     }
 }
 // for large laptop screens and small desktop screens
 @media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
     .about-text{
-        font-size: 6.5vw;
+        font-size: var(--fs-lap-p-h);
         line-height: 1.2em;
     }
 }
 // for large desktop screens
 @media screen and (min-device-width: 1920px){
     .about-text{
-        font-size: 6vw;
+        font-size: var(--fs-desk-p-h);
         line-height: 1.2em;
     }
 }

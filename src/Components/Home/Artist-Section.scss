@@ -22,6 +22,7 @@
 }
 .image-container img{
     object-fit: cover;
+    object-position: bottom;
 }
 .text-container span {
     -webkit-text-stroke: 2px var(--body_background);
@@ -289,9 +290,13 @@
         justify-content: center;
         align-items: center;
     }
-    .image-container img {
+    .image-container a {
         width: 40%;
         height: 90vh;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
     }
     .text-container{
         position: absolute;

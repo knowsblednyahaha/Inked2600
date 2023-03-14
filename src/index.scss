@@ -9,6 +9,21 @@
     --body_background: #FFF;
     --body_color: #000;
 
+    //homepage
+    --fs-mb-h-h: clamp(1.75em, 6vw + 1em, 6em);
+    --fs-tab-h-h: clamp(5em, 7vw + 1em, 8em);
+    --fs-lap-h-h: clamp(6em, 8vw + 1em, 12em);
+    --fs-desk-h-h: clamp(10.5em, 7vw + 1em, 15em);
+
+    --fs-mb-p-h: clamp(2em, 4vw + 1em, 4em);
+    --fs-tab-p-h: clamp(3.25em, 4.75vw + 1em, 5.5em);
+    --fs-lap-p-h: clamp(5em, 5vw + 1em, 7em);
+    --fs-desk-p-h: clamp(7em, 5.5vw + 1em, 8em);
+
+    --fs-mb-p-a: clamp(2em, 4vw + 1em, 4em);
+    --fs-tab-p-a: clamp(3.25em, 4.75vw + 1em, 5.5em);
+    --fs-lap-p-a: clamp(5em, 5vw + 1em, 6.5em);
+    --fs-desk-p-a: clamp(5em, 5vw + 1em, 6.5em);
 
     // artist page
     --fs-mb-h: clamp(2em, 7vw + 1em, 5em);

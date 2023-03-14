@@ -28,7 +28,7 @@ function ContactHero() {
             </div>
             <div className='contact-text-container'>
                 <div className='big-text-container'>
-                    <h5> Say <a href='#'> Hi!</a></h5>
+                    <h5> Say <a href='mailto:inked2600@gmail.com'> Hi!</a></h5>
                 </div>
                 <div className='description-container'>
                     <div className='text-description'>is simply dummy text of the printing and
@@ -41,10 +41,10 @@ function ContactHero() {
                     </div>
                     <div className='social-media-container'>
                         <div className='social-media-item'>
-                            <a href='#'>Facebook</a>
+                            <a href='https://www.facebook.com/profile.php?id=100087213424052' target="_blank" rel="noopener noreferrer">Facebook</a>
                         </div>
                         <div className='social-media-item'>
-                            <a href='#'>Instagram</a>
+                            <a href='https://www.instagram.com/inkedtwosixx/' target="_blank" rel="noopener noreferrer">Instagram</a>
                         </div>
                     </div>
                 </div>

@@ -60,7 +60,7 @@
         z-index: 2;
     }
     .text-header{
-        font-size: 11vw;
+        font-size: var(--fs-mb-h-h);
         text-align: center;
     }
     .home-image-container{
@@ -90,18 +90,18 @@
 // for tablets and small laptop screens
 @media screen and (min-device-width: 768px) and (max-device-width: 1199px){
     .text-header{
-        font-size: 9.5vw;
+        font-size: var(--fs-tab-h-h);
     }
 }
 // for large laptop screens and small desktop screens
 @media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
     .text-header{
-        font-size: 9vw;
+        font-size: var(--fs-lap-h-h);
     }
 }
 // for large desktop screens
 @media screen and (min-device-width: 1920px){
     .text-header{
-        font-size: 9vw;
+        font-size: var(--fs-desk-h-h);
     }
 }
