@@ -20,10 +20,26 @@
     --fs-lap-p-h: clamp(5em, 5vw + 1em, 7em);
     --fs-desk-p-h: clamp(7em, 5.5vw + 1em, 8em);
 
-    --fs-mb-p-a: clamp(2em, 4vw + 1em, 4em);
-    --fs-tab-p-a: clamp(3.25em, 4.75vw + 1em, 5.5em);
-    --fs-lap-p-a: clamp(5em, 5vw + 1em, 6.5em);
-    --fs-desk-p-a: clamp(5em, 5vw + 1em, 6.5em);
+    --fs-tab-p-h3: clamp(1em, 2vw + 1em, 2em);
+    --fs-lap-p-h3: clamp(2em, 1vw + 1em, 3em);
+    --fs-desk-p-h3: clamp(2.25em, 1vw + .5em, 7em);
+
+    --fs-tab-p-h4: clamp(6em, 5vw + 1em, 7em);
+    --fs-lap-p-h4: clamp(5em, 5vw + 1em, 8em);
+    --fs-desk-p-h4: clamp(6em, 5vw + 1em, 9em);
+
+    --fs-lap-p-a: clamp(2em, 2.25vw + .5em, 3em);
+    --fs-desk-p-a: clamp(3em, 5vw + 1em, 3.5em);
+
+    --fs-mb-p-m: clamp(5.5em, 4vw + 1em, 8em);
+    --fs-tab-p-m: clamp(8em, 6vw + 1em, 9em);
+    --fs-lap-p-m: clamp(10em, 5vw + 1em, 11em);
+    --fs-desk-p-m: clamp(11em, 5vw + 1em, 14em);
+
+    --fs-mb-p-h: clamp(2em, 4vw + 1em, 4em);
+    --fs-tab-p-h5: clamp(5.75em, 6vw + 1em, 8em);
+    --fs-lap-p-h5: clamp(7.15em, 5vw + 1em, 10em);
+    --fs-desk-p-h5: clamp(9.15em, 5vw + 1em, 12em);
 
     // artist page
     --fs-mb-h: clamp(2em, 7vw + 1em, 5em);

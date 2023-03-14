@@ -10,7 +10,7 @@
   position: relative;
   // display: flex;
   h5 {
-    font-size: 10vh;
+    font-size: var(--fs-mb-p-m);
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px var(--body_color);
@@ -58,11 +58,10 @@
   justify-content: center;
   
   h5{
-    font-size: 10vh;
+    font-size: var(--fs-tab-p-h5);
     font-weight: 600;
   }
   a{
-    font-size: 10vh;
     font-weight: 600;
     text-align: center;
     display: inline-block;
@@ -132,7 +131,7 @@
     height: 40vh;
   }
   .marquee h5 {
-    font-size: 15vh;
+    font-size: var(--fs-tab-p-m);
     font-weight: 700;
   }
   .contact-text-container{
@@ -142,9 +141,8 @@
     width: 50%;
     line-height: 6.25em;
   }
-  .big-text-container h5,
-  .big-text-container a{
-    font-size: 10vw;
+  .big-text-container h5{
+    font-size: var(--fs-tab-p-h5);
   }
   .description-container {
     width: 50%;
@@ -163,7 +161,7 @@
     height: 40vh;
   }
   .marquee h5 {
-    font-size: 18vh;
+    font-size: var(--fs-lap-p-m);
     font-weight: 700;
   }
   .contact-text-container{
@@ -172,9 +170,8 @@
   .big-text-container {
     width: 50%;
   }
-  .big-text-container h5,
-  .big-text-container a{
-    font-size: 13vh;
+  .big-text-container h5{
+    font-size: var(--fs-lap-p-h5);
   }
   .description-container {
     width: 50%;
@@ -193,7 +190,7 @@
     height: 40vh;
   }
   .marquee h5 {
-    font-size: 18vh;
+    font-size: var(--fs-desk-p-m);
     font-weight: 700;
   }
   .contact-text-container{
@@ -202,9 +199,8 @@
   .big-text-container {
     width: 50%;
   }
-  .big-text-container h5,
-  .big-text-container a{
-    font-size: 15vh;
+  .big-text-container h5{
+    font-size: var(--fs-desk-p-h5);
   }
   .description-container {
     width: 50%;

@@ -7,7 +7,7 @@ function Navbar() {
         <header>
             <nav className="navbar">
                 <div className="nav-logo">
-                    <Link to={'/'}><h1>Inked <br/>2600</h1></Link>
+                    <Link to={'/'}><strong>Inked <br/>2600</strong></Link>
                 </div>
                 <div className="nav-menu">
                     <div>

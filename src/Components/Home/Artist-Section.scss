@@ -84,7 +84,7 @@
         color: var(--body_color) !important;
     }
 }
-// fortablets and small laptop screens
+// for tablets and small laptop screens
 @media screen and (min-device-width: 768px) and (max-device-width: 1199px){
     .artist-container {
         padding: 5% 0% 5% 5%;
@@ -101,12 +101,12 @@
         margin-top: 5%;
     }
     .artist-title h3{
-        font-size: 3vw;
+        font-size: var(--fs-tab-p-h3);
         font-weight: 500;
     }
     .artist-title span{
         width: 40vw;
-        font-size: 4vw;
+        font-size: var(--fs-tab-p-h3);
         font-weight: 700;
         text-align: left;
     }
@@ -121,7 +121,7 @@
     }
     .text-container h4{
         width: 50% !important;
-        font-size: 10vh !important;
+        font-size: var(--fs-tab-p-h4) !important;
         font-weight: 700;
         line-height: 100%; 
         padding: 0;
@@ -180,13 +180,13 @@
         margin-top: 5%;
     }
     .artist-title h3{
-        font-size: 2.75vw;
+        font-size: var(--fs-lap-p-h3);
         font-weight: 500;
         line-height: 7vh;
     }
     .artist-title span{
         width: 40vw;
-        font-size: 3.75vw;
+        font-size: var(--fs-lap-p-h3);
         font-weight: 700;
         text-align: left;
     }
@@ -208,7 +208,7 @@
     }
     .text-container h4{
         width: 50% !important;
-        font-size: 12vh !important;
+        font-size: var(--fs-desk-p-h4) !important;
         font-weight: 700;
         line-height: 100%; 
         padding: 0;
@@ -220,7 +220,7 @@
     }
     .text-container p{
         width: 80%;
-        font-size: 4vh;
+        font-size: var(--fs-lap-p-a);
         font-weight: 300;
         line-height: 100%;
         margin-top: 1em; 
@@ -275,13 +275,13 @@
         margin-top: 5%;
     }
     .artist-title h3{
-        font-size: 2.75vw;
+        font-size: var(--fs-desk-p-h3);
         font-weight: 500;
         line-height: 7vh;
     }
     .artist-title span{
         width: 40vw;
-        font-size: 3.75vw;
+        font-size: var(--fs-desk-p-h3);
         font-weight: 700;
         text-align: left;
     }
@@ -307,7 +307,7 @@
     }
     .text-container h4{
         width: 100%;
-        font-size: 12vh !important;
+        font-size: var(--fs-desk-p-h4) !important;
         font-weight: 700;
         line-height: 100%; 
         padding: 0;
@@ -319,7 +319,7 @@
     }
     .text-container p{
         width: 80%;
-        font-size: 5vh;
+        font-size: var(--fs-desk-p-a);
         font-weight: 300;
         line-height: 100%;
         margin-top: 1em;
