@@ -33,6 +33,10 @@
     object-fit: cover;
     left: auto;
 }
+.home-image:nth-child(1)::after{
+    content: "";
+    background-color: #FFF;
+}
 .home-image:nth-child(2) img{
     height: 30vh;
     position: absolute;

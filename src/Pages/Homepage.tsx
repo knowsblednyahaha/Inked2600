@@ -7,8 +7,8 @@ import ContactHero from '../Components/Contact-Hero';
 import Footer from '../Components/Footer';
 import CursorElement from '../Cursor/CursorElement';
 
+
 export const Homepage = () => {
-  
   return (
     <div>
       <Navbar/>

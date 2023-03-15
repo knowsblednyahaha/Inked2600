@@ -1,7 +1,19 @@
 import './Home-Hero.scss';
-
+import {useEffect} from 'react'
+import { gsap } from "gsap";
 
 function HomeHero() {
+    const mask = document.querySelectorAll(".home-image");
+    const img = document.querySelectorAll(".home-image img");
+    useEffect( () => {
+        // gsap.from(mask, {
+        //     xPercent: -100,
+        //     duration: 1.5,
+        //     ease: "Power2.out"
+        // });
+        console.log(mask, img);
+    });
+
     return(
         <section className='home-hero'>
             <div className='text-header-container noselect'>
