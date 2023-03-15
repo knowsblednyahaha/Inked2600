@@ -29,13 +29,16 @@
     top: 5%;
     right: 12%;
     width: auto;
-    height: 35%;
     object-fit: cover;
-    left: auto;
 }
-.home-image:nth-child(1)::after{
+.home-image:nth-child(1) img::after{
+    position: absolute;
     content: "";
-    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    right: 0;
 }
 .home-image:nth-child(2) img{
     height: 30vh;
