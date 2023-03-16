@@ -1,5 +1,5 @@
 import './Home-Hero.scss';
-import {useEffect} from 'react'
+import {useEffect} from 'react';
 // import { gsap } from "gsap";
 
 function HomeHero() {

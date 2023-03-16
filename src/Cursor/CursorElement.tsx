@@ -8,7 +8,7 @@ export default function CursoElement()  {
     useEffect( () => {
         gsap.from(body, {
             opacity: 0,
-            duration: 1,
+            duration: .7,
             ease: "Power3.easeInOut",
         });
         new Cursor(document.querySelector(".cursor"));

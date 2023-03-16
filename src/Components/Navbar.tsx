@@ -1,8 +1,27 @@
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import ThemeToggle from './ThemeToggle';
+import {useEffect} from 'react'
+import { gsap } from "gsap";
 
 function Navbar() {
+    const logo = document.querySelector(".nav-logo");
+    const img = document.querySelector(".nav-menu");
+    useEffect( () => {
+        gsap.from(logo, {
+            xPercent: 50,
+            opacity: 0,
+            delay: .5,
+            ease: "Power4.inOut"
+        });
+        gsap.from(img, {
+            xPercent: 50,
+            opacity: 0,
+            delay: .5,
+            ease: "Power4.inOut"
+        });
+        console.log(logo, img);
+    });
     return(
         <header>
             <nav className="navbar">
