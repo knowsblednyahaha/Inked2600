@@ -4,10 +4,6 @@ import {Homepage} from './Pages/Homepage';
 import {Aboutpage} from './Pages/Aboutpage';
 import {Artistpage} from './Pages/Artistpage';
 
-import {animation} from './gsap/animation';
- 
-
-
 function App() {
   return (
     <>
@@ -16,7 +12,7 @@ function App() {
         <Route path='/about' element={<Aboutpage />} />
         <Route path='/artist/:id' element={<Artistpage />} />
       </Routes>
-      {animation}
+      
     </>
   )
 }
