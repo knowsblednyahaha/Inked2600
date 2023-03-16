@@ -24,12 +24,15 @@ function HomeHero() {
             <div className='home-image-container'>
                 <div className='home-image'>
                     <img src="/img/home-1.jpg" alt="" />
+                    <div className="image-wrapper"></div>
                 </div>
                 <div className='home-image'>
                     <img src="/img/home-2.jpg" alt="" />
+                    <div className="image-wrapper"></div>
                 </div>
                 <div className='home-image'>
                     <img src="/img/home-3.jpg" alt="" />
+                    <div className="image-wrapper"></div>
                 </div>
             </div>
         </section>

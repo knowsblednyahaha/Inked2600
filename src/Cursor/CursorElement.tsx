@@ -6,7 +6,9 @@ import { gsap } from "gsap";
 export default function CursoElement()  {
     const body = document.querySelector("body");
     const logo = document.querySelector(".nav-logo");
-    const img = document.querySelector(".nav-menu");
+    const menu = document.querySelector(".nav-menu");
+    const wrapper = document.querySelectorAll(".image-wrapper");
+    const header = document.querySelectorAll(".text-header");
     useEffect( () => {
         gsap.from(body, {
             opacity: 0,
@@ -14,19 +16,32 @@ export default function CursoElement()  {
             ease: "Power3.easeInOut",
         });
         gsap.from(logo, {
-            xPercent: 50,
+            x: 50,
             opacity: 0,
             delay: .4,
-            ease: "Power4.inOut"
+            ease: "Power4.easeInOut"
         });
-        gsap.from(img, {
-            xPercent: 50,
+        gsap.from(menu, {
+            x: 50,
             opacity: 0,
-            delay: .4,
-            ease: "Power4.inOut"
+            delay: .6,
+            ease: "Power4.easeInOut"
         });
+        gsap.from(wrapper, {
+            width: "100%",
+            delay: 1.3,
+            ease: "Power3.inOut"
+        });
+        gsap.from(header, {
+            y: 50,
+            opacity: 0,
+            delay: .8,
+            ease: "Power4.easeInOut"
+        });
+        
+
         new Cursor(document.querySelector(".cursor"));
-    });
+    }, []);
     return (
     <div className="cursor">
         <div className="cursor-big-circle"></div>
