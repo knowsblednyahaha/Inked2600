@@ -80,13 +80,15 @@
     .home-image:nth-child(1) img{
         width: 50%;
         height: 35% !important;
+    }
+    .home-image:nth-child(1){
         object-fit: cover;
         position: absolute;
         top: 6% !important;
         left: 5% !important;
-        
     }
-    .home-image:nth-child(2) img{
+    
+    .home-image:nth-child(2){
         height: 30vh !important;
         position: absolute;
         bottom: 10% !important;
