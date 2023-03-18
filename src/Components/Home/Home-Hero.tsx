@@ -1,38 +1,49 @@
 import './Home-Hero.scss';
-import {useEffect} from 'react';
-// import { gsap } from "gsap";
+import {useEffect, useRef} from 'react';
+import { gsap } from "gsap";
 
 function HomeHero() {
-    const mask = document.querySelectorAll(".home-image");
-    const img = document.querySelectorAll(".home-image img");
+    const header = useRef([]) as any;
+    let wrapper = useRef([]) as any;
+    // console.log(wrapper)
     useEffect( () => {
-        // gsap.from(mask, {
-        //     xPercent: -100,
-        //     duration: 1.5,
-        //     ease: "Power2.out"
-        // });
-        console.log(mask, img);
-    });
-
+        gsap.from(header.current, {
+            y: 50,
+            opacity: 0,
+            delay: .8,
+            ease: "Power4.easeInOut",
+            stagger: {
+                amount: 0.2
+            }
+        });
+        gsap.from(wrapper.current, {
+            width: "100%",
+            delay: 1.3,
+            ease: "Power3.inOut",
+            stagger: {
+                amount: 0.2
+            }
+        });
+    }, []);
     return(
         <section className='home-hero'>
             <div className='text-header-container noselect'>
-                <h1 className='text-header'>Distinctive</h1>
-                <h1 className='text-header'>Tattoo Artists</h1>
-                <h1 className='text-header'>in Baguio City</h1>
+                <h1 className='text-header' ref={el => {header.current[0] = el;}}>Distinctive</h1>
+                <h1 className='text-header' ref={el => {header.current[1] = el;}}>Tattoo Artists</h1>
+                <h1 className='text-header' ref={el => {header.current[2] = el;}}>in Baguio City</h1>
             </div>
             <div className='home-image-container'>
                 <div className='home-image'>
                     <img src="/img/home-1.jpg" alt="" />
-                    <div className="image-wrapper"></div>
+                    <div className="image-wrapper" ref={el => {wrapper.current[0] = el;}}></div>
                 </div>
                 <div className='home-image'>
                     <img src="/img/home-2.jpg" alt="" />
-                    <div className="image-wrapper"></div>
+                    <div className="image-wrapper" ref={el => {wrapper.current[1] = el;}}></div>
                 </div>
                 <div className='home-image'>
                     <img src="/img/home-3.jpg" alt="" />
-                    <div className="image-wrapper"></div>
+                    <div className="image-wrapper" ref={el => {wrapper.current[2] = el;}}></div>
                 </div>
             </div>
         </section>
