@@ -17,7 +17,7 @@ function ArtistSection() {
     useEffect( () => {
         gsap.from(title.current, {
             opacity: 0,
-            duration: 1,
+            duration: .8,
             ease: "Power4.easeInOut",
             scrollTrigger: {
                 trigger: title.current as any,
@@ -26,7 +26,7 @@ function ArtistSection() {
         gsap.from(artistDesc.current, {
             opacity: 0,
             y: 50,
-            duration: 1.5,
+            duration: 1,
             ease: "Power4.easeInOut",
             scrollTrigger: {
                 trigger: artistDesc.current as any,
@@ -34,8 +34,8 @@ function ArtistSection() {
         });
         gsap.from(imgwrapper.current, {
             width: "100%",
-            duration: .5,
-            delay: 1.3,
+            duration: 1,
+            delay: .5,
             ease: "Power3.inOut",
             stagger: {
                 amount: 0.8
