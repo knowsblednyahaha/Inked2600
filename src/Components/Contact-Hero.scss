@@ -58,7 +58,6 @@
   justify-content: center;
   
   h5{
-    font-size: var(--fs-tab-p-h5);
     font-weight: 600;
   }
   a{
@@ -116,6 +115,9 @@
   .marquee {
     line-height: 4em;
     height: 20vh;
+  }
+  .big-text-container h5{
+    font-size: var(--fs-mb-p-h5);
   }
   .text-description{
     padding: 1rem 0;
