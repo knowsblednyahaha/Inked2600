@@ -68,17 +68,23 @@ function ArtistSection() {
                             return(
                                 <SwiperSlide style={{textAlign: "center"}} key={data.id}>
                                     <div className='artist-info-container'>
-                                    <div className='image-container' >
-                                        <Link to={`/artist/${data.id}`} onClick={() => window.scrollTo(0, 0)} >
-                                            <img key={data.dp} src={data.dp} alt={data.dp} className="artist-img"/>
-                                            <div className="image-wrapper" ref={el => {imgwrapper.current[data.id] = el;}}></div>
-                                        </Link>
+                                        <div className='image-container' >
+                                            <Link to={`/artist/${data.id}`} onClick={() => window.scrollTo(0, 0)} >
+                                                <img key={data.dp} src={data.dp} alt={data.dp} className="artist-img"/>
+                                                <div className="image-wrapper" ref={el => {imgwrapper.current[data.id] = el;}}></div>
+                                            </Link>
+                                        </div>
+                                        <div className='text-container' ref={el => {artistDesc.current[data.id] = el;}}>
+                                            <h4 key={data.lastname}><span key={data.firstname}>{data.firstname}</span>&nbsp; {data.lastname}</h4>
+                                            <p key={data.artistdesc}>{data.artistdesc}</p>
+                                        </div>
+                                        <div className="button-container">
+                                            <Link to={`/artist/${data.id}`} onClick={() => window.scrollTo(0, 0)} >
+                                                <button>View Portfolio</button>
+                                            </Link>
+                                        </div>
+                                        
                                     </div>
-                                    <div className='text-container' ref={el => {artistDesc.current[data.id] = el;}}>
-                                        <h4 key={data.lastname}><span key={data.firstname}>{data.firstname}</span>&nbsp; {data.lastname}</h4>
-                                        <p key={data.artistdesc}>{data.artistdesc}</p>
-                                    </div>
-                                </div>
                                 </SwiperSlide>
                             )
                         })
