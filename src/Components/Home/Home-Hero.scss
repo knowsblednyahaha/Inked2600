@@ -34,7 +34,6 @@
     position: absolute;
     top: 5%;
     right: 12%;
-    width: auto;
     object-fit: cover;
 }
 .home-image:nth-child(1) img{
@@ -78,8 +77,9 @@
         margin: 0;
     }
     .home-image:nth-child(1) img{
-        width: 50%;
-        height: 35% !important;
+        width: 50vw;
+        height: 35vh !important;
+        object-fit: cover;
     }
     .home-image:nth-child(1){
         object-fit: cover;
@@ -89,9 +89,9 @@
     }
     
     .home-image:nth-child(2){
-        height: 30vh !important;
+        height: 40% !important;
         position: absolute;
-        bottom: 10% !important;
+        bottom: 0 !important;
         right: 5% !important;
         top: auto;
         left: auto;
