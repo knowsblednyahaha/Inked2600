@@ -25,8 +25,8 @@ function ArtistSection() {
         });
         gsap.from(artistDesc.current, {
             opacity: 0,
-            y: 30,
-            duration: 1,
+            // y: 30,
+            duration: 1.2,
             ease: "Power4.easeInOut",
             scrollTrigger: {
                 trigger: artistDesc.current as any,
