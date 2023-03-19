@@ -11,16 +11,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function ArtistSection() {
-    const title = useRef(null);
+    const artisttitle = useRef(null);
     let artistDesc = useRef([]) as any;
     let imgwrapper = useRef([]) as any;
     useEffect( () => {
-        gsap.from(title.current, {
+        gsap.from(artisttitle.current, {
             opacity: 0,
             duration: .8,
             ease: "Power4.easeInOut",
             scrollTrigger: {
-                trigger: title.current as any,
+                trigger: artisttitle.current as any,
             },
         });
         gsap.from(artistDesc.current, {
@@ -48,7 +48,7 @@ function ArtistSection() {
     SwiperCore.use([Autoplay]);
     return(
         <section className='artist-container noselect'>
-            <div className='artist-title' ref={title}>
+            <div className='artist-title' ref={artisttitle}>
                 <h3>Meet the <span>Artists</span></h3>
             </div>
             <div className='swiper-container'>
