@@ -37,6 +37,9 @@
 .swiper-slide-active{
     z-index: 100;
 }
+.button-container{
+    display: none;
+}
 
 // for mobile device
 @media screen and (max-device-width: 479px){
@@ -155,9 +158,6 @@
     .text-container p{
         display: none;
     }
-    .button-container{
-        display: none;
-    }
     .swiper-slide-next {
         z-index: 10;
         transform: translateX(-70%) !important;
@@ -252,9 +252,6 @@
         text-align: left;
         overflow: visible;
         z-index: 10;
-    }
-    .button-container{
-        display: none;
     }
     .swiper-slide-next {
         z-index: 10;
@@ -354,9 +351,6 @@
         text-align: left;
         overflow: visible;
         z-index: 10;
-    }
-    .button-container{
-        display: none;
     }
     .swiper-slide-next {
         z-index: 10;
