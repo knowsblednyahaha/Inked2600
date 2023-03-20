@@ -93,11 +93,11 @@
         button{
             border-radius: 0;
             padding: 1em;
-            color: #000;
+            color: var(--body_background) !important;
             font-weight: 600;
             font-size: 1em;
             box-shadow: none;
-            background-color: #FFF;
+            background-color: var(--body_color) !important;
             border-color: transparent;
         }
     }
