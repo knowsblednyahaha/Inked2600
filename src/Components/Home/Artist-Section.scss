@@ -67,7 +67,7 @@
     .text-container {
         h4{
             position: absolute;
-            bottom: 5%;
+            bottom: 20%;
             left: 50%;
             transform: translateX(-50%);
             width: 80%;
@@ -84,7 +84,12 @@
     }
     .button-container{
         padding: 1.5em;
-    
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2%;
+        z-index: 20;
         button{
             border-radius: 0;
             padding: 1em;
@@ -342,11 +347,11 @@
         -webkit-text-stroke: 1px var(--body_color);
     }
     .text-container p{
-        width: 80%;
+        width: 85%;
         font-size: var(--fs-desk-p-a);
         font-weight: 300;
         line-height: 100%;
-        margin-top: 1em;
+        margin-top: 0.5em;
         padding: 2% 0;
         text-align: left;
         overflow: visible;
