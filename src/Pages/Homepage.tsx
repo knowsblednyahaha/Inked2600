@@ -14,7 +14,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 export const Homepage = () => {
   useEffect( () => {
-    const scroll = new LocomotiveScroll({
+    new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]') as any,
     smooth: true
     });
