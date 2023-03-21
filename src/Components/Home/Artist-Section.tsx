@@ -46,7 +46,7 @@ function ArtistSection() {
     }, []);
     SwiperCore.use([Autoplay]);
     return(
-        <section className='artist-container noselect'>
+        <section className='artist-container noselect' data-scroll-section>
             <div className='artist-title' ref={artisttitle}>
                 <h3>Meet the <span>Artists</span></h3>
             </div>

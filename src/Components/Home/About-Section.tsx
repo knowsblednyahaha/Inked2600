@@ -20,8 +20,8 @@ function AboutSection() {
         });
     }, []);
     return(
-        <section className='about-container'>
-            <p className='about-text noselect' ref={text}>
+        <section className='about-container' data-scroll-section>
+            <p className='about-text noselect' ref={text} data-scroll>
                 As a group of artists we want to show our art piece
                 and share them with you so you can get to&nbsp;
                 <Link to={'/about'} onClick={() => window.scrollTo(0, 0)}><span className='hover-text'>know us</span></Link> 

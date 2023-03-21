@@ -26,7 +26,7 @@ function HomeHero() {
         });
     }, []);
     return(
-        <section className='home-hero'>
+        <section className='home-hero' data-scroll-section>
             <div className='text-header-container noselect'>
                 <h1 className='text-header' ref={el => {header.current[0] = el;}}>Distinctive</h1>
                 <h1 className='text-header' ref={el => {header.current[1] = el;}}>Tattoo Artists</h1>

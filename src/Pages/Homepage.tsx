@@ -7,10 +7,20 @@ import ContactHero from '../Components/Contact-Hero';
 import Footer from '../Components/Footer';
 import CursorElement from '../Cursor/CursorElement';
 
+import {useEffect} from 'react';
+import LocomotiveScroll from 'locomotive-scroll';
+// import 'locomotive-scroll/src/locomotive-scroll.scss'
+
 
 export const Homepage = () => {
+  useEffect( () => {
+    const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]') as any,
+    smooth: true
+    });
+}, []);
   return (
-    <div>
+    <div data-scroll-container>
       <Navbar/>
       <HomeHero/>
       <AboutSection/>
