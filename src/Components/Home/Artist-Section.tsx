@@ -48,7 +48,7 @@ function ArtistSection() {
     return(
         <section className='artist-container noselect' data-scroll-section>
             <div className='artist-title' ref={artisttitle}>
-                <h3>Meet the <span>Artists</span></h3>
+                <h3 data-scroll>Meet the <span>Artists</span></h3>
             </div>
             <div className='swiper-container'>
                 <Swiper
@@ -69,17 +69,17 @@ function ArtistSection() {
                                     <div className='artist-info-container'>
                                         <div className='image-container' >
                                             <Link to={`/artist/${data.id}`} onClick={() => window.scrollTo(0, 0)} >
-                                                <img key={data.dp} src={data.dp} alt={data.dp} className="artist-img"/>
+                                                <img key={data.dp} src={data.dp} alt={data.dp} className="artist-img" data-scroll/>
                                                 <div className="image-wrapper" ref={el => {imgwrapper.current[data.id] = el;}}></div>
                                             </Link>
                                         </div>
                                         <div className='text-container' ref={el => {artistDesc.current[data.id] = el;}}>
-                                            <h4 key={data.lastname}><span key={data.firstname}>{data.firstname}</span>&nbsp; {data.lastname}</h4>
-                                            <p key={data.artistdesc}>{data.artistdesc}</p>
+                                            <h4 key={data.lastname} data-scroll><span key={data.firstname} data-scroll>{data.firstname}</span>&nbsp; {data.lastname}</h4>
+                                            <p key={data.artistdesc} data-scroll>{data.artistdesc}</p>
                                         </div>
                                         <div className="button-container">
                                             <Link to={`/artist/${data.id}`} onClick={() => window.scrollTo(0, 0)} >
-                                                <button>View Portfolio</button>
+                                                <button data-scroll>View Portfolio</button>
                                             </Link>
                                         </div>
                                         

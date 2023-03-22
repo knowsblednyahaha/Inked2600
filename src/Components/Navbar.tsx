@@ -22,7 +22,7 @@ function Navbar() {
         });
     }, []);
     return(
-        <header>
+        <header data-scroll-section>
             <nav className="navbar">
                 <div className="nav-logo" ref={logo}>
                     <Link to={'/'}><strong>Inked <br/>2600</strong></Link>

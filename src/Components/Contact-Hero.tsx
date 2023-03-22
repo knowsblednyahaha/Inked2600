@@ -53,9 +53,9 @@ function ContactHero() {
         });
     }, []);
     return(
-        <section className='contact-hero-container noselect'>
+        <section className='contact-hero-container noselect' data-scroll-section>
             <div className='marquee'>
-                <h5>
+                <h5 data-scroll>
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
@@ -66,7 +66,7 @@ function ContactHero() {
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us
                 </h5>
                 <br />
-                <h5>
+                <h5 data-scroll>
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
                     get to <span className='white'>know</span> us - get to <span className='white'>know</span> us -
@@ -79,10 +79,10 @@ function ContactHero() {
             </div>
             <div className='contact-text-container'>
                 <div className='big-text-container' ref={hi}>
-                    <h5> Say <a href='mailto:inked2600@gmail.com'> Hi!</a></h5>
+                    <h5 data-scroll> Say <a href='mailto:inked2600@gmail.com' data-scroll> Hi!</a></h5>
                 </div>
                 <div className='description-container'>
-                    <div className='text-description' ref={textDesc}>is simply dummy text of the printing and
+                    <div className='text-description' ref={textDesc} data-scroll>is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been 
                         the industry's standard dummy text ever 
                         since the 1500s, when an unknown printer 
@@ -92,10 +92,10 @@ function ContactHero() {
                     </div>
                     <div className='social-media-container'>
                         <div className='social-media-item' ref={element => {line.current[0] = element;}}>
-                            <a href='https://www.facebook.com/profile.php?id=100087213424052' target="_blank" rel="noopener noreferrer" ref={element => {socmed.current[0] = element;}}>Facebook</a>
+                            <a href='https://www.facebook.com/profile.php?id=100087213424052' target="_blank" rel="noopener noreferrer" ref={element => {socmed.current[0] = element;}} data-scroll>Facebook</a>
                         </div>
                         <div className='social-media-item' ref={element => {line.current[1] = element;}}>
-                            <a href='https://www.instagram.com/inkedtwosixx/' target="_blank" rel="noopener noreferrer"  ref={element => {socmed.current[1] = element;}}>Instagram</a>
+                            <a href='https://www.instagram.com/inkedtwosixx/' target="_blank" rel="noopener noreferrer"  ref={element => {socmed.current[1] = element;}} data-scroll>Instagram</a>
                         </div>
                     </div>
                 </div>
