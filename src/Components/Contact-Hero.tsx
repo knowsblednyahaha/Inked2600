@@ -82,13 +82,9 @@ function ContactHero() {
                     <h5 data-scroll> Say <a href='mailto:inked2600@gmail.com' data-scroll> Hi!</a></h5>
                 </div>
                 <div className='description-container'>
-                    <div className='text-description' ref={textDesc} data-scroll>is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been 
-                        the industry's standard dummy text ever 
-                        since the 1500s, when an unknown printer 
-                        took a galley of type and scrambled it to 
-                        make a type specimen book. It has survived 
-                        not only five centuries,
+                    <div className='text-description' ref={textDesc} data-scroll>
+                        By looking at both our tattoo fill in and our workmanship, one can see that we are unique yet dependable, and that we can adapt to a wide range of styles and bearings.
+                        While we can provide broad rates and make agreements over the phone, we encourage anyone interested in our work or looking for a no-obligation meeting to come to the shop and speak with us in person.
                     </div>
                     <div className='social-media-container'>
                         <div className='social-media-item' ref={element => {line.current[0] = element;}}>

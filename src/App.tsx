@@ -17,7 +17,7 @@ function App() {
   // }, []);
   return (
     <>
-      <Routes>
+      <Routes >
         <Route path='/' element={<Homepage />} />
         <Route path='/about' element={<Aboutpage />} />
         <Route path='/artist/:id' element={<Artistpage />} />

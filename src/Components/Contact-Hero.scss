@@ -125,20 +125,6 @@
   .social-media-item{
     text-align: center
   }
-  .button-container{
-    padding: 1.5em;
-
-    button{
-      border-radius: 0;
-      padding: 1em;
-      color: #000;
-      font-weight: 600;
-      font-size: 1em;
-      box-shadow: none;
-      background-color: #FFF;
-      border-color: transparent;
-    }
-  }
 }
 // fortablets and small laptop screens
 @media screen and (min-device-width: 768px) and (max-device-width: 1199px){
