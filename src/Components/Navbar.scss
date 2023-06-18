@@ -3,8 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 2.5%;
-    padding: 30px 10px;
+    margin: 0 5%;
     height: 10vh;
     max-width: 100vw;
 }
@@ -22,14 +21,25 @@
 // for mobile device
 @media screen and (max-device-width: 767px){
     .nav-logo {
-        font-size: 1em;
+        font-size: var(--fs-mb-logo);
         line-height: 20px;
     }
 }
 // fortablets and small laptop screens
 @media screen and (min-device-width: 768px) and (max-device-width: 1199px){
     .nav-logo {
-        font-size: 1.25em;
+        font-size: var(--fs-tab-logo);
         line-height: 20px;
+    }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
+    .nav-logo {
+        font-size: var(--fs-lap-logo);
+        line-height: 18px;
+    }
+}
+@media screen and (min-device-width: 1920px){
+    .nav-logo {
+        font-size: var(--fs-desk-logo);
     }
 }

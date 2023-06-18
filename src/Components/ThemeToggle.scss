@@ -33,4 +33,8 @@
       ;
     }
   }
-  
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
+    .toggle {
+      --size: 1.25rem;
+    }
+  }

@@ -8,7 +8,11 @@
 :root {
     --body_background: #FFF;
     --body_color: #000;
-
+    //logo text
+    --fs-mb-logo: clamp(.75em, 1vw + 1em, 1em);
+    --fs-tab-logo: clamp(1em, 2vw + 1em, 1.15em);
+    --fs-lap-logo: clamp(1.15em, 3vw + 1em, 1.25em);
+    --fs-desk-logo: clamp(1.25em, 5vw + 1em, 1.5em);
     //homepage
     --fs-mb-h-h: clamp(1.75em, 6vw + 1em, 6em);
     --fs-tab-h-h: clamp(5em, 7vw + 1em, 8em);
