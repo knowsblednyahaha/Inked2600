@@ -33,9 +33,12 @@
     }
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
+    .navbar{
+        margin: .5% 5%;
+    }
     .nav-logo {
         font-size: var(--fs-lap-logo);
-        line-height: 18px;
+        line-height: 19px;
     }
 }
 @media screen and (min-device-width: 1920px){
