@@ -75,7 +75,7 @@
             font-weight: 700;
             line-height: 90%; 
             z-index: 20;
-            color: var(--body_background);
+            color: var(--body_background) !important;
             -webkit-text-stroke: 1px var(--body_color); 
         }
         p{
