@@ -49,6 +49,9 @@
             bottom: 14% !important;
         }
     }
+    .button-container button {
+        padding: 0.75em;
+    }
 }
 @media screen and (max-device-width: 767px){
     .artist-title {
@@ -88,7 +91,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 2%;
+        bottom: 0;
         z-index: 20;
         button{
             border-radius: 0;
