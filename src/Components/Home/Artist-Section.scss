@@ -49,6 +49,9 @@
             bottom: 14% !important;
         }
     }
+    .button-container {
+        bottom: 5%;
+    }
     .button-container button {
         padding: 0.75em !important;
     }
@@ -91,14 +94,14 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 0;
+        bottom: 7%;
         z-index: 20;
         button{
             border-radius: 0;
             padding: 1em;
             color: var(--body_background) !important;
             font-weight: 600;
-            font-size: 1em;
+            font-size: 1.25em;
             box-shadow: none;
             background-color: var(--body_color) !important;
             border-color: transparent;
