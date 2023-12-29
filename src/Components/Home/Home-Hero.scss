@@ -1,120 +1,121 @@
-.home-hero{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+.home-hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 .text-header-container {
-    padding: 0 10%;
-    z-index: 2;
+  padding: 0 10%;
+  z-index: 2;
 }
-.text-header{
-    font-weight: 600;
-    line-height: 100%;
+.text-header {
+  font-weight: 600;
+  line-height: 100%;
+  width: fit-content;
 }
-.text-header:nth-child(1){
-    text-align: left;
+.text-header:nth-child(1) {
+  text-align: left;
 }
-.text-header:nth-child(2){
-    text-align: center !important;
+.text-header:nth-child(2) {
+  text-align: center !important;
 }
-.text-header:nth-child(3){
-    text-align: end;
+.text-header:nth-child(3) {
+  text-align: end;
 }
-.image-wrapper{
-    position: absolute;
-    background-color: #191818;
-    top: 0;
-    width: 0;
-    height: 100%;
+.image-wrapper {
+  position: absolute;
+  background-color: #191818;
+  top: 0;
+  width: 0;
+  height: 100%;
 }
-.home-image:nth-child(1){
-    position: absolute;
-    top: 5%;
-    right: 12%;
-    object-fit: cover;
+.home-image:nth-child(1) {
+  position: absolute;
+  top: 5%;
+  right: 12%;
+  object-fit: cover;
 }
-.home-image:nth-child(1) img{
-    height: 50vh !important;
+.home-image:nth-child(1) img {
+  height: 50vh !important;
 }
-.home-image:nth-child(2){
-    position: absolute;
-    top: 5%;
-    left: 8%;
+.home-image:nth-child(2) {
+  position: absolute;
+  top: 5%;
+  left: 8%;
 }
-.home-image:nth-child(2) img{
-    height: 30vh;
+.home-image:nth-child(2) img {
+  height: 30vh;
 }
-.home-image:nth-child(3){
-    display: inline;
-    position: absolute;
-    bottom: 8%;
-    left: 10%;
+.home-image:nth-child(3) {
+  display: inline;
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
 }
-.home-image:nth-child(3) img{
-    height: 40vh;
+.home-image:nth-child(3) img {
+  height: 40vh;
 }
 
-@media screen and (max-device-width: 365px){
-    .text-header{
-        font-size: 2.5em !important;
-    }
+@media screen and (max-device-width: 365px) {
+  .text-header {
+    font-size: 2.5em !important;
+  }
 }
 
 //mobile devices
-@media screen and (max-device-width: 767px){
-    .text-header-container {
-        padding: 0 5%;
-        z-index: 2;
-    }
-    .text-header{
-        font-size: var(--fs-mb-h-h);
-        text-align: center;
-    }
-    .home-image-container{
-        margin: 0;
-    }
-    .home-image:nth-child(1) img{
-        width: 50vw;
-        height: 35vh !important;
-        object-fit: cover;
-    }
-    .home-image:nth-child(1){
-        object-fit: cover;
-        position: absolute;
-        top: 6% !important;
-        left: 5% !important;
-    }
-    
-    .home-image:nth-child(2){
-        height: 40% !important;
-        position: absolute;
-        bottom: 0 !important;
-        right: 5% !important;
-        top: auto;
-        left: auto;
-    }
-    .home-image:nth-child(3) img{
-        display: none !important;
-    }
+@media screen and (max-device-width: 767px) {
+  .text-header-container {
+    padding: 0 5%;
+    z-index: 2;
+  }
+  .text-header {
+    font-size: var(--fs-mb-h-h);
+    text-align: center;
+  }
+  .home-image-container {
+    margin: 0;
+  }
+  .home-image:nth-child(1) img {
+    width: 50vw;
+    height: 35vh !important;
+    object-fit: cover;
+  }
+  .home-image:nth-child(1) {
+    object-fit: cover;
+    position: absolute;
+    top: 6% !important;
+    left: 5% !important;
+  }
+
+  .home-image:nth-child(2) {
+    height: 40% !important;
+    position: absolute;
+    bottom: 0 !important;
+    right: 5% !important;
+    top: auto;
+    left: auto;
+  }
+  .home-image:nth-child(3) img {
+    display: none !important;
+  }
 }
 // for tablets and small laptop screens
-@media screen and (min-device-width: 768px) and (max-device-width: 1199px){
-    .text-header{
-        font-size: var(--fs-tab-h-h);
-    }
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+  .text-header {
+    font-size: var(--fs-tab-h-h);
+  }
 }
 // for large laptop screens and small desktop screens
-@media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
-    .text-header{
-        font-size: var(--fs-lap-h-h);
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1919px) {
+  .text-header {
+    font-size: var(--fs-lap-h-h);
+  }
 }
 // for large desktop screens
-@media screen and (min-device-width: 1920px){
-    .text-header{
-        font-size: var(--fs-desk-h-h);
-    }
+@media screen and (min-device-width: 1920px) {
+  .text-header {
+    font-size: var(--fs-desk-h-h);
+  }
 }
