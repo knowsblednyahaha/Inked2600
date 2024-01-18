@@ -1,11 +1,52 @@
 .Aboutpage-Container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 0;
+  padding-bottom: 10rem;
+  pointer-events: none;
+  .aboutpage-text-container {
     display: flex;
     justify-content: center;
-    padding: 5% 5%;
-    pointer-events: none;
+    width: 100%;
+    padding: 0 5%;
     p {
-        font-size: 6vw;
-        font-weight: 600;
-        line-height: auto;
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: auto;
     }
+  }
+}
+// fortablets and small laptop screens
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+  .Aboutpage-Container {
+    padding: 5rem 0;
+    p {
+      font-size: 4rem !important;
+      font-weight: 600;
+      line-height: auto;
+    }
+  }
+}
+// for large laptop screens and small desktop screens
+@media screen and (min-device-width: 1200px) and (max-device-width: 1919px) {
+  .Aboutpage-Container {
+    padding: 5rem 0;
+    p {
+      font-size: 5rem !important;
+      font-weight: 600;
+      line-height: auto;
+    }
+  }
+}
+// for large desktop screens
+@media screen and (min-device-width: 1920px) {
+  .Aboutpage-Container {
+    padding: 5rem 0;
+    p {
+      font-size: 7rem !important;
+      font-weight: 600;
+      line-height: auto;
+    }
+  }
 }

@@ -1,51 +1,54 @@
-.about-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    width: 100%;
-    height: 100vh;
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 940px;
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
-.about-text{
-    font-weight: 500;
+.about-text {
+  font-weight: 500;
+  padding: 12% 5%;
 }
-.about-text span{
-    color: #5C5C5C;
-    border-bottom: 1px solid #5C5C5C;
-    z-index: 10;
+.about-text span {
+  color: #5c5c5c;
+  border-bottom: 1px solid #5c5c5c;
+  z-index: 10;
 }
-.about-text span:hover{
-    color: var(--body_color);
-    border-bottom: 1px solid var(--body_color);
+.about-text span:hover {
+  color: var(--body_color);
+  border-bottom: 1px solid var(--body_color);
 }
 // for mobile device
-@media screen and (max-device-width: 767px){
-    .about-container{
-        height: 80vh;
-        padding: 10% 5%;
-    }
-    .about-text{
-        font-size: var(--fs-mb-p-h);
-    }
+@media screen and (max-device-width: 767px) {
+  .about-container {
+    height: 80vh;
+    padding: 10% 5%;
+  }
+  .about-text {
+    font-size: var(--fs-mb-p-h);
+  }
 }
 // fortablets and small laptop screens
-@media screen and (min-device-width: 768px) and (max-device-width: 1199px){
-    .about-text{
-        font-size: var(--fs-tab-p-h);
-        line-height: 1.2em;
-    }
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+  .about-text {
+    font-size: var(--fs-tab-p-h);
+    line-height: 1.2em;
+  }
 }
 // for large laptop screens and small desktop screens
-@media screen and (min-device-width: 1200px) and (max-device-width: 1919px){
-    .about-text{
-        font-size: var(--fs-lap-p-h);
-        line-height: 1.2em;
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1919px) {
+  .about-text {
+    font-size: var(--fs-lap-p-h);
+    line-height: 1.2em;
+  }
 }
 // for large desktop screens
-@media screen and (min-device-width: 1920px){
-    .about-text{
-        font-size: var(--fs-desk-p-h);
-        line-height: 1.2em;
-    }
+@media screen and (min-device-width: 1920px) {
+  .about-text {
+    font-size: 7.75rem;
+    line-height: 1.2em;
+  }
 }

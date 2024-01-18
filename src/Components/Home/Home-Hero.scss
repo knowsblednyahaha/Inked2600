@@ -1,13 +1,21 @@
 .home-hero {
   width: 100%;
-  height: 90vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  max-height: 940px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
 .text-header-container {
-  padding: 0 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50rem;
+  padding: 0 5%;
   z-index: 2;
 }
 .text-header {
@@ -24,6 +32,9 @@
 .text-header:nth-child(3) {
   text-align: end;
 }
+.home-image-container {
+  height: 100%;
+}
 .image-wrapper {
   position: absolute;
   background-color: #191818;
@@ -38,7 +49,7 @@
   object-fit: cover;
 }
 .home-image:nth-child(1) img {
-  height: 50vh !important;
+  height: 27rem !important;
 }
 .home-image:nth-child(2) {
   position: absolute;
@@ -46,7 +57,7 @@
   left: 8%;
 }
 .home-image:nth-child(2) img {
-  height: 30vh;
+  height: 16rem;
 }
 .home-image:nth-child(3) {
   display: inline;
@@ -55,7 +66,7 @@
   left: 10%;
 }
 .home-image:nth-child(3) img {
-  height: 40vh;
+  height: 21.5rem;
 }
 
 @media screen and (max-device-width: 365px) {
@@ -116,6 +127,6 @@
 // for large desktop screens
 @media screen and (min-device-width: 1920px) {
   .text-header {
-    font-size: var(--fs-desk-h-h);
+    font-size: 10rem;
   }
 }
