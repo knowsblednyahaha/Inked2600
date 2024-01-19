@@ -27,62 +27,64 @@ function HomeHero() {
   }, []);
   return (
     <section className="home-hero" data-scroll-section>
-      <div className="text-header-container noselect">
-        <h1
-          className="text-header"
-          ref={(el) => {
-            header.current[0] = el;
-          }}
-          data-scroll
-        >
-          Distinctive
-        </h1>
-        <h1
-          className="text-header"
-          ref={(el) => {
-            header.current[1] = el;
-          }}
-          data-scroll
-        >
-          Tattoo Artists
-        </h1>
-        <h1
-          className="text-header"
-          ref={(el) => {
-            header.current[2] = el;
-          }}
-          data-scroll
-        >
-          in Baguio City
-        </h1>
-      </div>
-      <div className="home-image-container">
-        <div className="home-image">
-          <img src="/img/home-1.jpg" alt="" data-scroll />
-          <div
-            className="image-wrapper"
+      <div className="home-hero-container">
+        <div className="text-header-container noselect">
+          <h1
+            className="text-header"
             ref={(el) => {
-              wrapper.current[0] = el;
+              header.current[0] = el;
             }}
-          ></div>
+            data-scroll
+          >
+            Distinctive
+          </h1>
+          <h1
+            className="text-header"
+            ref={(el) => {
+              header.current[1] = el;
+            }}
+            data-scroll
+          >
+            Tattoo Artists
+          </h1>
+          <h1
+            className="text-header"
+            ref={(el) => {
+              header.current[2] = el;
+            }}
+            data-scroll
+          >
+            in Baguio City
+          </h1>
         </div>
-        <div className="home-image">
-          <img src="/img/home-2.jpg" alt="" data-scroll />
-          <div
-            className="image-wrapper"
-            ref={(el) => {
-              wrapper.current[1] = el;
-            }}
-          ></div>
-        </div>
-        <div className="home-image">
-          <img src="/img/home-3.jpg" alt="" data-scroll />
-          <div
-            className="image-wrapper"
-            ref={(el) => {
-              wrapper.current[2] = el;
-            }}
-          ></div>
+        <div className="home-image-container">
+          <div className="home-image">
+            <img src="/img/home-1.jpg" alt="" data-scroll />
+            <div
+              className="image-wrapper"
+              ref={(el) => {
+                wrapper.current[0] = el;
+              }}
+            ></div>
+          </div>
+          <div className="home-image">
+            <img src="/img/home-2.jpg" alt="" data-scroll />
+            <div
+              className="image-wrapper"
+              ref={(el) => {
+                wrapper.current[1] = el;
+              }}
+            ></div>
+          </div>
+          <div className="home-image">
+            <img src="/img/home-3.jpg" alt="" data-scroll />
+            <div
+              className="image-wrapper"
+              ref={(el) => {
+                wrapper.current[2] = el;
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     </section>

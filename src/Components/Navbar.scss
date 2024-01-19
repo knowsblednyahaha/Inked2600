@@ -2,14 +2,21 @@ header {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  z-index: 20;
+  position: relative;
+}
+.navbar-container {
+  position: absolute;
+  padding: 0 5%;
+  height: 4.5rem;
+  width: 100%;
 }
 .navbar {
   font-weight: 300 !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
-  height: 5rem;
+  height: 100%;
 }
 .nav-logo {
   font-size: 1.5em;

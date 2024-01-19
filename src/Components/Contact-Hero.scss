@@ -158,11 +158,11 @@
 // for large laptop screens and small desktop screens
 @media screen and (min-device-width: 1200px) and (max-device-width: 1919px) {
   .contact-hero-container {
-    padding: 10% 5% 5% 5%;
+    padding: 8% 5% 3% 5%;
   }
   .marquee {
     line-height: 7em;
-    height: 40vh;
+    height: 15rem;
   }
   .marquee h5 {
     font-size: var(--fs-lap-p-m);
@@ -176,7 +176,7 @@
     width: 50%;
   }
   .big-text-container h5 {
-    font-size: var(--fs-lap-p-h5);
+    font-size: 7.5rem;
   }
   .description-container {
     width: 50%;

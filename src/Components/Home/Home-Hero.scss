@@ -9,13 +9,16 @@
   justify-content: center;
   position: relative;
 }
+.home-hero-container {
+  height: 100vh;
+}
 .text-header-container {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50rem;
-  padding: 0 5%;
+  height: 100vh;
+  padding: 0 10%;
   z-index: 2;
 }
 .text-header {
@@ -44,16 +47,16 @@
 }
 .home-image:nth-child(1) {
   position: absolute;
-  top: 5%;
+  top: 12%;
   right: 12%;
   object-fit: cover;
 }
 .home-image:nth-child(1) img {
-  height: 27rem !important;
+  height: 25rem !important;
 }
 .home-image:nth-child(2) {
   position: absolute;
-  top: 5%;
+  top: 13%;
   left: 8%;
 }
 .home-image:nth-child(2) img {
@@ -89,21 +92,21 @@
     margin: 0;
   }
   .home-image:nth-child(1) img {
-    width: 50vw;
-    height: 35vh !important;
+    width: 45vw;
+    height: 16rem !important;
     object-fit: cover;
   }
   .home-image:nth-child(1) {
     object-fit: cover;
     position: absolute;
-    top: 6% !important;
+    top: 10% !important;
     left: 5% !important;
   }
 
   .home-image:nth-child(2) {
-    height: 40% !important;
+    height: fit-content !important;
     position: absolute;
-    bottom: 0 !important;
+    bottom: 10% !important;
     right: 5% !important;
     top: auto;
     left: auto;
@@ -120,8 +123,43 @@
 }
 // for large laptop screens and small desktop screens
 @media screen and (min-device-width: 1200px) and (max-device-width: 1919px) {
+  .text-header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    z-index: 2;
+    height: 100vh;
+  }
   .text-header {
     font-size: var(--fs-lap-h-h);
+  }
+  .home-image:nth-child(1) {
+    position: absolute;
+    top: 5%;
+    right: 12%;
+    object-fit: cover;
+  }
+  .home-image:nth-child(1) img {
+    height: 20.5rem !important;
+  }
+  .home-image:nth-child(2) {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+  .home-image:nth-child(2) img {
+    height: 12rem;
+  }
+  .home-image:nth-child(3) {
+    display: inline;
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+  }
+  .home-image:nth-child(3) img {
+    height: 15.5rem;
   }
 }
 // for large desktop screens

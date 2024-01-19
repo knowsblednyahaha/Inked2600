@@ -23,18 +23,20 @@ function Navbar() {
   }, []);
   return (
     <header data-scroll-section>
-      <nav className="navbar">
-        <div className="nav-logo" ref={logo}>
-          <Link to={"/"}>
-            <strong>
-              Inked <br />
-              2600
-            </strong>
-          </Link>
-        </div>
-        <div className="nav-menu" ref={menu}>
-          <div>
-            <ThemeToggle />
+      <nav className="navbar-container">
+        <div className="navbar">
+          <div className="nav-logo" ref={logo}>
+            <Link to={"/"}>
+              <strong>
+                Inked <br />
+                2600
+              </strong>
+            </Link>
+          </div>
+          <div className="nav-menu" ref={menu}>
+            <div>
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </nav>

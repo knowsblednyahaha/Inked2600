@@ -47,76 +47,78 @@ function ArtistSection() {
   SwiperCore.use([Autoplay]);
   return (
     <section className="artist-container noselect" data-scroll-section>
-      <div className="artist-title" ref={artisttitle}>
-        <h3 data-scroll>
-          Meet the <span>Artists</span>
-        </h3>
-      </div>
-      <div className="swiper-container">
-        <Swiper
-          modules={[Pagination, Navigation]}
-          navigation={true}
-          autoHeight={true}
-          spaceBetween={10}
-          slidesPerView={1}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-        >
-          {Data.artist.map((data) => {
-            return (
-              <SwiperSlide style={{ textAlign: "center" }} key={data.id}>
-                <div className="artist-info-container">
-                  <div className="image-container">
-                    <Link
-                      to={`/artist/${data.id}`}
-                      onClick={() => window.scrollTo(0, 0)}
+      <div className="artist-content-container">
+        <div className="artist-title" ref={artisttitle}>
+          <h3 data-scroll>
+            Meet the <span>Artists</span>
+          </h3>
+        </div>
+        <div className="swiper-container">
+          <Swiper
+            modules={[Pagination, Navigation]}
+            navigation={true}
+            autoHeight={true}
+            spaceBetween={10}
+            slidesPerView={1}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+          >
+            {Data.artist.map((data) => {
+              return (
+                <SwiperSlide style={{ textAlign: "center" }} key={data.id}>
+                  <div className="artist-info-container">
+                    <div className="image-container">
+                      <Link
+                        to={`/artist/${data.id}`}
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        <img
+                          key={data.dp}
+                          src={data.dp}
+                          alt={data.dp}
+                          className="artist-img"
+                          data-scroll
+                        />
+                        <div
+                          className="image-wrapper"
+                          ref={(el) => {
+                            imgwrapper.current[data.id] = el;
+                          }}
+                        ></div>
+                      </Link>
+                    </div>
+                    <div
+                      className="text-container"
+                      ref={(el) => {
+                        artistDesc.current[data.id] = el;
+                      }}
                     >
-                      <img
-                        key={data.dp}
-                        src={data.dp}
-                        alt={data.dp}
-                        className="artist-img"
-                        data-scroll
-                      />
-                      <div
-                        className="image-wrapper"
-                        ref={(el) => {
-                          imgwrapper.current[data.id] = el;
-                        }}
-                      ></div>
-                    </Link>
+                      <h4 key={data.lastname} data-scroll>
+                        <span key={data.firstname} data-scroll>
+                          {data.firstname}
+                        </span>
+                        &nbsp; {data.lastname}
+                      </h4>
+                      <p key={data.artistdesc} data-scroll>
+                        {data.artistdesc}
+                      </p>
+                    </div>
+                    <div className="button-container">
+                      <Link
+                        to={`/artist/${data.id}`}
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        <button data-scroll>View Portfolio</button>
+                      </Link>
+                    </div>
                   </div>
-                  <div
-                    className="text-container"
-                    ref={(el) => {
-                      artistDesc.current[data.id] = el;
-                    }}
-                  >
-                    <h4 key={data.lastname} data-scroll>
-                      <span key={data.firstname} data-scroll>
-                        {data.firstname}
-                      </span>
-                      &nbsp; {data.lastname}
-                    </h4>
-                    <p key={data.artistdesc} data-scroll>
-                      {data.artistdesc}
-                    </p>
-                  </div>
-                  <div className="button-container">
-                    <Link
-                      to={`/artist/${data.id}`}
-                      onClick={() => window.scrollTo(0, 0)}
-                    >
-                      <button data-scroll>View Portfolio</button>
-                    </Link>
-                  </div>
-                </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
       </div>
     </section>
   );
