@@ -33,7 +33,7 @@ function ArtistSection() {
     });
     gsap.from(imgwrapper.current, {
       width: "100%",
-      duration: 5,
+      duration: 1,
       delay: 0.5,
       ease: "Power3.inOut",
       stagger: {
