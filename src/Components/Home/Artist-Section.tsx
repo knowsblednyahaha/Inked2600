@@ -61,7 +61,7 @@ function ArtistSection() {
             spaceBetween={10}
             slidesPerView={1}
             autoplay={{
-              delay: 5000,
+              delay: 5000000,
               disableOnInteraction: false,
             }}
           >
